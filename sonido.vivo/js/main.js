@@ -1,5 +1,5 @@
 const regionesComunas = {
-  "Región Metropolitana de Santiago": ["Santiago", "Providencia", "Las Condes", "Maipú", "Puente Alto", "La Florida", "Ñuñoa", "Vitacura", "La Reina", "San Miguel"],
+  "Región Metropolitana de Santiago": ["Santiago", "Providencia", "Las Condes", "Maipú", "Puente Alto", "La Florida"],
   "Región de Valparaíso": ["Valparaíso", "Viña del Mar", "Quilpué", "Villa Alemana", "San Antonio"],
   "Región de la Araucanía": ["Temuco", "Villarrica", "Angol", "Pucón"],
   "Región de Ñuble": ["Chillán", "San Carlos", "Bulnes"]
@@ -8,6 +8,8 @@ const regionesComunas = {
 function cargarRegiones() {
   const selectRegion = document.getElementById("region");
   if (!selectRegion) return;
+
+  selectRegion.innerHTML = '<option value="">-- Seleccione la región --</option>';
 
   Object.keys(regionesComunas).forEach(region => {
     const opcion = document.createElement("option");
@@ -22,6 +24,7 @@ function cargarRegiones() {
 function cargarComunas() {
   const selectRegion = document.getElementById("region");
   const selectComuna = document.getElementById("comuna");
+  if (!selectRegion || !selectComuna) return;
 
   selectComuna.innerHTML = '<option value="">-- Seleccione la comuna --</option>';
 

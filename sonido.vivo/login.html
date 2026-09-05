@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión - Sonido Vivo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">Sonido Vivo</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('activo')">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="acciones">
+      <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a>
+      <a href="carrito.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+  <main class="contenedor-form">
+    <form id="form-login" novalidate>
+      <h2>Iniciar sesión</h2>
+
+      <label for="correo">Correo</label>
+      <input type="email" id="correo" name="correo">
+      <span class="error" id="error-correo"></span>
+
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" name="password">
+      <span class="error" id="error-password"></span>
+
+      <button type="submit">Iniciar sesión</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>Sonido Vivo — Tienda de Instrumentos Musicales, Viña del Mar © 2026</p>
+  </footer>
+
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal-box">
+      <p id="modal-mensaje"></p>
+      <button onclick="cerrarModal()">Aceptar</button>
+    </div>
+  </div>
+
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+  <body class="fondo-tienda"></body>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productos - Panel Admin - Sonido Vivo</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <div class="admin-layout">
+    <aside class="admin-sidebar">
+      <div class="admin-logo">Sonido Vivo</div>
+      <nav>
+        <ul>
+          <li><a href="home-admin.html">Dashboard</a></li>
+          <li><a href="productos-listado.html" class="activo">Productos</a></li>
+          <li><a href="usuario-listado.html">Usuarios</a></li>
+        </ul>
+      </nav>
+      <div class="admin-sidebar-footer">
+        <a href="../login.html">Cerrar sesión</a>
+      </div>
+    </aside>
+
+    <main class="admin-contenido">
+      <div class="admin-header-tabla">
+        <h1>Productos</h1>
+        <a href="producto-nuevo.html" class="btn-nuevo">+ Nuevo Producto</a>
+      </div>
+
+      <table class="admin-tabla">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Stock</th>
+            <th>Categoría</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="tabla-productos-body">
+          <!-- se llena con JS -->
+        </tbody>
+      </table>
+    </main>
+  </div>
+  
+  <script src="../js/productos.js"></script>
+  <script src="../js/admin.js"></script>
+</body>
+</html>
