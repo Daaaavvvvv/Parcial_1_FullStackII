@@ -4,7 +4,12 @@
   --color-fondo: #f7f4ef;
   --color-texto: #2b2118;
   --color-blanco: #fff;
-  --fuente-base: 'Segoe UI', Arial, sans-serif;
+  --fuente-base: 'Inter', 'Segoe UI', Arial, sans-serif;
+  --fuente-titulo: 'Poppins', var(--fuente-base);
+}
+
+h1, h2, h3, .logo {
+  font-family: var(--fuente-titulo);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -22,6 +27,26 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
+.fondo-tienda {
+  position: relative;
+}
+
+.fondo-tienda::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/fondo-tienda.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px) brightness(0.5);
+  transform: scale(1.1);
+  z-index: -1;
+}
+
+
 
 main {
   flex: 1;
@@ -350,3 +375,43 @@ footer {
   padding-left: 2rem;
   padding-right: 2rem;
 }
+
+a, button, input, select, textarea {
+  transition: all 0.2s ease;
+}
+
+.navbar nav a:hover {
+  transform: translateY(-1px);
+}
+
+.contenedor-form button:hover,
+.admin-form button:hover,
+.btn-nuevo:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 162, 76, 0.4);
+}
+
+.admin-tabla tr {
+  transition: background-color 0.15s ease;
+}
+
+.admin-tabla tbody tr:hover {
+  background-color: #faf7f2;
+}
+
+/* 5. Y después la animación de aparecer */
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.contenedor-form,
+.admin-form,
+.admin-tabla {
+  animation: aparecer 0.4s ease;
+}
+
+.modal-box {
+  animation: aparecer 0.25s ease;
+}
+
