@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="Productos.html creado y productos.js actualizado">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Parcial_1_FullStackII.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "vvv120605"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Daaaavvvvv/Parcial_1_FullStackII.git",
+    "accountId": "b5b2a7e3-54f0-4d5d-a20b-028397b83e60"
+  }
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0002187337122619" />
+      <entry key="MS500" value="1.304530693361268" />
+      <entry key="S2" value="4.087203354828256" />
+      <entry key="S5" value="6.41733759618919" />
+      <entry key="S10" value="7.574079058755304" />
+      <entry key="S30" value="8.587826509672567" />
+      <entry key="S60" value="11.270860053702693" />
+      <entry key="M2" value="24.348088216564893" />
+      <entry key="M5" value="69.54907975678475" />
+      <entry key="M10" value="125.00703646226629" />
+      <entry key="M15" value="167.17073929845026" />
+      <entry key="M30" value="254.924257032414" />
+      <entry key="H1" value="341.7289436204369" />
+      <entry key="H2" value="406.42101803646807" />
+      <entry key="H4" value="446.4904366316831" />
+      <entry key="D1" value="484.75248163320873" />
+      <entry key="W1" value="491.808943928887" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.821355393841565E-214" />
+      <entry key="S10" value="2.293973220063287E-107" />
+      <entry key="S30" value="3.8009778392760174E-36" />
+      <entry key="S60" value="2.6743188934698156E-18" />
+      <entry key="M2" value="2.3129177715872964E-9" />
+      <entry key="M5" value="5.811236341507564E-4" />
+      <entry key="M10" value="0.039710504599467705" />
+      <entry key="M15" value="0.16559529496792977" />
+      <entry key="M30" value="0.6995981142487783" />
+      <entry key="H1" value="1.4458656517599304" />
+      <entry key="H2" value="2.081635798020976" />
+      <entry key="H4" value="2.4986611863372508" />
+      <entry key="D1" value="2.909898400539912" />
+      <entry key="W1" value="2.986958199805532" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.0060925997614814705" />
+      <entry key="MS500" value="0.547665097802611" />
+      <entry key="S2" value="3.6859364906152057" />
+      <entry key="S5" value="6.216247444176404" />
+      <entry key="S10" value="7.464896909462047" />
+      <entry key="S30" value="8.549224398533847" />
+      <entry key="S60" value="11.250552265142925" />
+      <entry key="M2" value="24.335622191615258" />
+      <entry key="M5" value="69.54096505191009" />
+      <entry key="M10" value="125.03737978341024" />
+      <entry key="M15" value="167.32400930714243" />
+      <entry key="M30" value="255.60700636235296" />
+      <entry key="H1" value="343.15942718394734" />
+      <entry key="H2" value="408.4920654413923" />
+      <entry key="H4" value="448.98286121672214" />
+      <entry key="D1" value="487.6611863433623" />
+      <entry key="W1" value="494.7957274797644" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="3ItUFTIDVbf5aex4lzxxdZruEHx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Vanessa",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nessa\IdeaProjects\Parcial_1_FullStackII\sonido.vivo\img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="" />
+      <created>1788583255858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788583255858</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Imagenes agregadas" />
+    <MESSAGE value="Productos.html creado y productos.js actualizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Productos.html creado y productos.js actualizado" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
