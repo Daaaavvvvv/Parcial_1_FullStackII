@@ -47,5 +47,3 @@ function actualizarContadorCarrito() {
 }
 
 document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
-
-document.addEventListener("DOMContentLoaded", cargarRegiones);
