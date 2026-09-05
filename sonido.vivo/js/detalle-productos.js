@@ -29,8 +29,6 @@ function renderizarDetalleProducto() {
                 </div>
                 <div class="detalle-miniaturas">
                     <img src="${producto.imagen}" alt="Miniatura" class="miniatura activa">
-                    <img src="${producto.imagen}" alt="Miniatura" class="miniatura">
-                    <img src="${producto.imagen}" alt="Miniatura" class="miniatura">
                 </div>
             </div>
 
