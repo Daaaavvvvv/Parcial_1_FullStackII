@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blogs - Sonido Vivo</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo de Sonido Vivo" class="logo-img">
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('activo')" >☰</button>
+    <nav>
+      <ul>
+        <li></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.2); margin: 12px 0;">
+      </ul>
+    </nav>
+    <div class="acciones ">
+      <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a>
+      <a href="carrito.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+        <main class="container-blogs">
+        <article class="blog-detail">
+            <!-- Encabezado -->
+            <header class="detail-header">
+            <span class="category">Dato Curioso & Historia</span>
+            <h1>El origen secreto de la Fender Stratocaster</h1>
+            <div class="meta-info">
+                <span>Por <strong>Tienda Sonido Vivo</strong></span> • 
+                <time datetime="2026-09-05">5 de Septiembre, 2026</time>
+            </div>
+            </header>
+
+            <!-- Imagen destacada -->
+            <div class="detail-main-image2">
+            <img src="img/strato.jpg" alt="Fender Stratocaster">
+            </div>
+
+            <!-- Contenido del artículo -->
+            <div class="detail-content">
+            <p class="lead">
+                La Fender Stratocaster es probablemente la guitarra eléctrica más reconocida del planeta. Sin embargo, en 1954 no fue diseñada pensando en las distorsiones del rock ni en estadios llenos, sino en la comodidad de los músicos de música Country y Swing.
+            </p>
+
+            <h2>1. Diseñada para tocar horas de pie</h2>
+            <p>
+                Leo Fender escuchó las quejas de los guitarristas de la época que usaban la Telecaster. Pedían un instrumento con bordes redondeados que no hincara las costillas tras largas horas de actuación. Así nacieron los míticos rebajes del cuerpo (*contour body*) de la Stratocaster.
+            </p>
+
+            <h2>2. El puente de trémolo que cambió la música</h2>
+            <p>
+                Otra gran innovación fue el sistema de trémolo sincronizado. Aunque originalmente buscaba imitar el sonido suave de la guitarra hawaiana, años más tarde guitarristas como Jimi Hendrix llevaron este mecanismo al límite para crear efectos psicodélicos nunca antes escuchados.
+            </p>
+
+            <blockquote>
+                "La Stratocaster no intentaba seguir una tendencia: redefinió cómo debía verse y sonar una guitarra moderna."
+            </blockquote>
+
+            <h2>3. De las bandas de Western al Olimpo del Rock</h2>
+            <p>
+                Artistas como Buddy Holly fueron los primeros en mostrarla en televisión, pero fueron David Gilmour, Eric Clapton y Stevie Ray Vaughan quienes consolidaron su estatus de leyenda con su característico tono brillante y cristalino en las pastillas intermedias.
+            </p>
+
+            <!-- Llamado a la tienda -->
+            <section class="store-callout">
+                <h3>¿Quieres probar una Stratocaster?</h3>
+                <p>En <strong>Sonido Vivo</strong> disponemos de modelos con configuración clásica de 3 pastillas simples y amplificadores a tubos para que sientas la verdadera versatilidad de este icono.</p>
+                <a href="productos.html" class="btn">Ver guitarras disponibles</a>
+            </section>
+            </div>
+
+            <!-- Botón de regreso -->
+            <div class="detail-footer">
+            <a href="blogs.html" class="btn-back">← Volver a Noticias</a>
+            </div>
+        </article>
+        </main>
+        <footer>
+            <p>Sonido Vivo — Tienda de Instrumentos Musicales, Viña del Mar © 2026</p>
+        </footer>
+    <body class="fondo-tienda"> </body>
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
