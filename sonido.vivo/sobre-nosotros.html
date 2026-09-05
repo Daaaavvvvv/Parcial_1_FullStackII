@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sobre nosotros - Sonido Vivo</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo">
+        <img src="img/logo.png" alt="Logo de Sonido Vivo" class="logo-img">
+    </a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').classList.toggle('activo')" >☰</button>
+    <nav>
+      <ul>
+        <li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="sobre-nosotros.html">Nosotros</a></li>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.2); margin: 12px 0;">
+      </ul>
+    </nav>
+    <div class="acciones ">
+      <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a>
+      <a href="carrito.html">🛒 Cart (<span id="cart-count">0</span>)</a>
+    </div>
+  </header>
+
+        <main class="about-container">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <h1>Sobre Sonido Vivo</h1>
+            <p class="subtitle">Conoce nuestra historia y nuestra pasión por la música.</p>
+        </section>
+
+        <!-- Historia Section -->
+        <section class="about-history">
+            <div class="history-content">
+            <h2>Nuestra historia</h2>
+            <p>Sonido Vivo nació en Viña del Mar con el objetivo de acercar instrumentos musicales de calidad a músicos de todos los niveles...</p>
+            </div>
+            <div class="history-image">
+            <img src="tienda-o-equipo.jpg" alt="Tienda Sonido Vivo" />
+            </div>
+        </section>
+
+        <!-- Misión y Visión Grid -->
+        <section class="about-values">
+            <div class="card">
+            <h3>Misión</h3>
+            <p>Ofrecer instrumentos y accesorios musicales accesibles y de calidad para potenciar el talento local...</p>
+            </div>
+            <div class="card">
+            <h3>Visión</h3>
+            <p>Ser la tienda de referencia en instrumentos musicales en la región, destacando por la atención personalizada...</p>
+            </div>
+        </section>
+        </main>
+
+        <footer>
+            <p>Sonido Vivo — Tienda de Instrumentos Musicales, Viña del Mar © 2026</p>
+        </footer>
+
+        <div id="modal-overlay" class="modal-overlay">
+            <div class="modal-box">
+            <p id="modal-mensaje"></p>
+            <button onclick="cerrarModal()">Aceptar</button>
+            </div>
+        </div>
+
+  <script src="js/validaciones.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

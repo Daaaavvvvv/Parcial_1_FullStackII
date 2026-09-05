@@ -415,3 +415,56 @@ a, button, input, select, textarea {
   animation: aparecer 0.25s ease;
 }
 
+.logo img {
+    height: 80px; /* Ajusta la altura según el diseño de tu navbar */
+    width: auto;  /* Mantiene la proporción original */
+    display: block;
+}
+S
+
+.about-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  color: #2b2621;
+}
+
+.about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.about-history{
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.about-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .about-history,
+  .about-values {
+    grid-template-columns: 1fr;
+  }
+}
