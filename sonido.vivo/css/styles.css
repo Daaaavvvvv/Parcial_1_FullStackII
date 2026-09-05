@@ -432,11 +432,12 @@ a, button, input, select, textarea {
   margin-right: auto !important;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 40px auto;
 }
 
 .about-hero {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   color: #ffffff !important;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
@@ -474,7 +475,7 @@ a, button, input, select, textarea {
 .about-developers{
   border-radius: 8px;
   padding: 30px;
-  margin-bottom: 30px;
+
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -491,5 +492,72 @@ a, button, input, select, textarea {
   .about-history,
   .about-values {
     grid-template-columns: 1fr;
+  }
+}
+.blog-title {
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.blog-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.blog-title {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.blog-card {
+  background-color: #f0f0f0; /* Cambiar a #ffffff si usas fondo oscuro en la página */
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.blog-content {
+  flex: 1;
+}
+
+.blog-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.btn-blog {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+/* Adaptación a celulares */
+@media (max-width: 768px) {
+  .blog-card {
+    flex-direction: column-reverse;
+  }
+  .blog-image {
+    max-width: 100%;
+    width: 100%;
   }
 }
