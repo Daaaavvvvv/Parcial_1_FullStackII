@@ -36,4 +36,16 @@ function cargarComunas() {
   }
 }
 
+function actualizarContadorCarrito() {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+
+  const contador = document.getElementById("cart-count");
+  if (contador) {
+    contador.textContent = totalItems;
+  }
+}
+
+document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
+
 document.addEventListener("DOMContentLoaded", cargarRegiones);

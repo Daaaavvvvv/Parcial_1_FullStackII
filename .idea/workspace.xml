@@ -5,11 +5,776 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="Productos.html creado y productos.js actualizado">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Parcial_1_FullStackII.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonido.vivo/js/detalle-productos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/detalle-de-producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/detalle-de-producto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/productos.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/productos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/esbuild.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/esbuild.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/jiti" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/jiti.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/jiti.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/nanoid" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/nanoid.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/nanoid.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/rollup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/rollup.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/rollup.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/tailwindcss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/tailwindcss.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/tailwindcss.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/vite" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/vite.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.bin/vite.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/.package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@esbuild/win32-x64/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@esbuild/win32-x64/esbuild.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@esbuild/win32-x64/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/gen-mapping.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/types/gen-mapping.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/types/set-array.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/types/sourcemap-segment.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/dist/types/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/src/gen-mapping.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/src/set-array.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/src/sourcemap-segment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/src/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/gen-mapping.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/set-array.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/set-array.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/set-array.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/set-array.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/sourcemap-segment.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/types.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/types.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/types.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/gen-mapping/types/types.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/dist/remapping.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/dist/remapping.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/dist/remapping.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/dist/remapping.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/src/build-source-map-tree.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/src/remapping.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/src/source-map-tree.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/src/source-map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/src/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/build-source-map-tree.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/remapping.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/remapping.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/remapping.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/remapping.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map-tree.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map-tree.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map-tree.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map-tree.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/source-map.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/types.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/types.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/types.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/remapping/types/types.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/dist/resolve-uri.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/dist/types/resolve-uri.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/resolve-uri/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/dist/sourcemap-codec.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/src/range-mappings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/src/scopes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/src/sourcemap-codec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/src/strings.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/src/vlq.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/range-mappings.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/range-mappings.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/range-mappings.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/range-mappings.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/scopes.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/sourcemap-codec.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/strings.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/strings.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/strings.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/strings.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/sourcemap-codec/types/vlq.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/dist/trace-mapping.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/binary-search.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/by-source.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/flatten-map.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/resolve.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/sort.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/sourcemap-segment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/strip-filename.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/trace-mapping.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/src/types.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/binary-search.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/binary-search.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/binary-search.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/binary-search.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/by-source.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/by-source.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/by-source.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/by-source.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/flatten-map.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/resolve.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/resolve.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/resolve.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/resolve.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sort.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sort.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sort.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sort.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/sourcemap-segment.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/strip-filename.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/trace-mapping.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/types.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/types.d.cts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/types.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@jridgewell/trace-mapping/types/types.d.mts.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher-win32-x64/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher-win32-x64/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher-win32-x64/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher-win32-x64/watcher.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/binding.gyp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/index.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/.bin/detect-libc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/.bin/detect-libc.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/.bin/detect-libc.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/.npmignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/bin/detect-libc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/lib/detect-libc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/node_modules/detect-libc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/scripts/build-from-source.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Backend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Backend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Debounce.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Debounce.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/DirTree.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/DirTree.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Event.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Glob.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Glob.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/PromiseRunner.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Signal.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Watcher.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/Watcher.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/binding.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/linux/InotifyBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/linux/InotifyBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/macos/FSEventsBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/macos/FSEventsBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/shared/BruteForceBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/unix/fts.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/unix/legacy.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/wasm/WasmBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/wasm/WasmBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/wasm/include.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/watchman/BSER.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/watchman/BSER.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/watchman/IPC.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/windows/WindowsBackend.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/windows/WindowsBackend.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/windows/win_utils.cc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/src/windows/win_utils.hh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@parcel/watcher/wrapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-gnu/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-gnu/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-gnu/rollup.win32-x64-gnu.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@rollup/rollup-win32-x64-msvc/rollup.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/cli/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/cli/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/cli/dist/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/cli/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/esm-cache.loader.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/esm-cache.loader.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/index.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/require-cache.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/dist/require-cache.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss-win32-x64-msvc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/ast.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/ast.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/browserslistToTargets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/composeVisitors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/flags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/index.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/targets.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/node/targets.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/node_modules/lightningcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/node/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide-win32-x64-msvc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide-win32-x64-msvc/tailwindcss-oxide.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/oxide/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/dist/index.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/dist/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/chunk-3FWCBO63.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/chunk-7ZRPRNCT.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/chunk-AZANAYY2.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/colors-b_6i0Oi7.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/colors.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/colors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/colors.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/default-theme.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/default-theme.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/default-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/default-theme.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/flatten-color-palette.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/flatten-color-palette.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/flatten-color-palette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/flatten-color-palette.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/lib.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/lib.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/lib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/lib.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/plugin.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/plugin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/plugin.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/resolve-config-BIFUA2FY.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/resolve-config-QUZ9b-Gn.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/dist/types-BTRmm49E.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/preflight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/node_modules/tailwindcss/utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@tailwindcss/vite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@types/estree/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@types/estree/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@types/estree/flow.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@types/estree/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/@types/estree/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/compile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/expand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/braces/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/lib/detect-libc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/lib/elf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/lib/filesystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/lib/process.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/detect-libc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/AliasFieldPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/AliasPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/AliasUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/AppendPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/CloneBasenamePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ConditionalPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/DescriptionFilePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/DescriptionFileUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/DirectoryExistsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ExportsFieldPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ExtensionAliasPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/FileExistsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ImportsFieldPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/JoinRequestPartPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/JoinRequestPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/LogInfoPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/MainFieldPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ModulesInHierachicDirectoriesPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ModulesInHierarchicalDirectoriesPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ModulesInRootPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ModulesUtils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/NextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ParsePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/PnpPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/Resolver.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ResolverFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/RestrictionsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/ResultPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/RootsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/SelfReferencePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/SymlinkPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/SyncAsyncFileSystemDecorator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/TryNextPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/TsconfigPathsPlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/UnsafeCachePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/UseFilePlugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/createInnerContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/forEachBail.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/getInnerRequest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/getPaths.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/entrypoints.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/fileURLToPath.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/fs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/graceful-fs-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/identifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/memoize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/module-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/path-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/process-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/strip-json-comments.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/lib/util/url-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/enhanced-resolve/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/bin/esbuild" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/install.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/lib/main.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/lib/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/esbuild/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/dist/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/dist/index.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/dist/index.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/dist/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fdir/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fill-range/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fill-range/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fill-range/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/fill-range/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/clone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/graceful-fs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/legacy-streams.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/graceful-fs/polyfills.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-extglob/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-extglob/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-extglob/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-extglob/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-glob/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-glob/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-glob/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-glob/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-number/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-number/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-number/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/is-number/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/dist/babel.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/dist/jiti.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-cli.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-hooks.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-native.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-register.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-register.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti-static.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/jiti.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/lib/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/jiti/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss-win32-x64-msvc/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss-win32-x64-msvc/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss-win32-x64-msvc/lightningcss.win32-x64-msvc.node" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss-win32-x64-msvc/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/ast.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/ast.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/browserslistToTargets.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/composeVisitors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/flags.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/index.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/targets.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/node/targets.js.flow" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/lightningcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.cjs.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.cjs.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.cjs.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.es.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.es.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.es.mjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.umd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/dist/magic-string.umd.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/magic-string/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/lib/picomatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/lib/scan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/node_modules/picomatch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/micromatch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/lib/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/mri/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.browser.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/index.native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/async/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/bin/nanoid.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.browser.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/nanoid.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/non-secure/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/non-secure/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/non-secure/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/non-secure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/url-alphabet/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/url-alphabet/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/nanoid/url-alphabet/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/common.gypi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/except.gypi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/napi-inl.deprecated.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/napi-inl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/napi.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/node_addon_api.gyp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/node_api.gyp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/noexcept.gypi" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/nothing.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/package-support.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/tools/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/tools/check-napi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/tools/clang-format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/tools/conversion.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/node-addon-api/tools/eslint-format.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/picocolors.browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/picocolors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/picocolors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picocolors/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/lib/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/lib/picomatch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/lib/scan.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/lib/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/picomatch/posix.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/at-rule.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/at-rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/comment.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/comment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/container.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/container.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/css-syntax-error.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/css-syntax-error.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/declaration.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/declaration.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/document.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/fromJSON.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/fromJSON.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/input.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/input.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/lazy-result.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/lazy-result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/list.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/map-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/no-work-result.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/no-work-result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/node.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/parse.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/postcss.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/postcss.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/postcss.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/postcss.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/previous-map.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/previous-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/processor.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/processor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/result.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/result.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/root.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/root.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/rule.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/rule.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/stringifier.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/stringifier.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/stringify.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/stringify.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/symbols.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/terminal-highlight.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/tokenize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/warn-once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/warning.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/lib/warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/postcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/bin/rollup" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/getLogFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/parseAst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/rollup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/shared/node-entry.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/shared/parseAst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/es/shared/watch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/getLogFilter.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/getLogFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/loadConfigFile.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/loadConfigFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/parseAst.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/parseAst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/rollup.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/rollup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/fsevents-importer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/loadConfigFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/parseAst.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/rollup.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/watch-cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/dist/shared/watch.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/rollup/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/array-set.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/base64-vlq.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/base64.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/binary-search.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/mapping-list.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/quick-sort.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-map-consumer.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-map-consumer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-map-generator.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-map-generator.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-node.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/source-node.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/source-map.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/source-map-js/source-map.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/chunk-5JIJA4QV.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/chunk-C2OYBFIH.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/chunk-DCG7AFIE.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/colors-C__qRT83.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/colors.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/colors.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/colors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/colors.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/default-theme.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/default-theme.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/default-theme.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/default-theme.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/flatten-color-palette.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/flatten-color-palette.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/flatten-color-palette.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/flatten-color-palette.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/lib.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/lib.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/lib.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/lib.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/plugin.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/plugin.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/plugin.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/resolve-config-B4yBzhca.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/resolve-config-QUZ9b-Gn.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/dist/types-DWdTiksJ.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/preflight.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/theme.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tailwindcss/utilities.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncParallelBailHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncParallelHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncSeriesBailHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncSeriesHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncSeriesLoopHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/AsyncSeriesWaterfallHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/Hook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/HookCodeFactory.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/HookMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/MultiHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/SyncBailHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/SyncHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/SyncLoopHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/SyncWaterfallHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/lib/util-browser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tapable/tapable.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/dist/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/dist/index.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/dist/index.d.mts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/dist/index.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/tinyglobby/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/to-regex-range/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/to-regex-range/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/to-regex-range/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/to-regex-range/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/bin/openChrome.applescript" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/bin/vite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/client.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/client/client.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/client/env.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node-cjs/publicUtils.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/chunks/dep-3RmXg9uo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/chunks/dep-CV-fz3CQ.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/chunks/dep-CvfTChi5.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/chunks/dep-DDtvSN7_.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/chunks/dep-Dm0c1Wj2.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/cli.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/constants.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/module-runner.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/module-runner.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/dist/node/moduleRunnerTransport.d-DJ_mE5sf.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/index.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/index.d.cts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/misc/false.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/misc/true.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/customEvent.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/hmrPayload.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/hot.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/import-meta.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/importGlob.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/importMeta.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/internal/cssPreprocessorOptions.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/internal/lightningcssOptions.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/metadata.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/node_modules/vite/types/package.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,112 +784,118 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "vvv120605"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vvv120605&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Daaaavvvvv/Parcial_1_FullStackII.git",
-    "accountId": "b5b2a7e3-54f0-4d5d-a20b-028397b83e60"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Daaaavvvvv/Parcial_1_FullStackII.git&quot;,
+    &quot;accountId&quot;: &quot;b5b2a7e3-54f0-4d5d-a20b-028397b83e60&quot;
   }
-}]]></component>
+}</component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0002187337122619" />
-      <entry key="MS500" value="1.304530693361268" />
-      <entry key="S2" value="4.087203354828256" />
-      <entry key="S5" value="6.41733759618919" />
-      <entry key="S10" value="7.574079058755304" />
-      <entry key="S30" value="8.587826509672567" />
-      <entry key="S60" value="11.270860053702693" />
-      <entry key="M2" value="24.348088216564893" />
-      <entry key="M5" value="69.54907975678475" />
-      <entry key="M10" value="125.00703646226629" />
-      <entry key="M15" value="167.17073929845026" />
-      <entry key="M30" value="254.924257032414" />
-      <entry key="H1" value="341.7289436204369" />
-      <entry key="H2" value="406.42101803646807" />
-      <entry key="H4" value="446.4904366316831" />
-      <entry key="D1" value="484.75248163320873" />
-      <entry key="W1" value="491.808943928887" />
+      <entry key="MS100" value="1.0002961097134335" />
+      <entry key="MS500" value="1.339902214862332" />
+      <entry key="S2" value="2.2836034899005386" />
+      <entry key="S5" value="2.674859398501451" />
+      <entry key="S10" value="2.848075032543722" />
+      <entry key="S30" value="8.922996427366126" />
+      <entry key="S60" value="35.66796382602165" />
+      <entry key="M2" value="86.68154712573971" />
+      <entry key="M5" value="185.50862941330792" />
+      <entry key="M10" value="293.2609820120826" />
+      <entry key="M15" value="374.41029281289565" />
+      <entry key="M30" value="559.5357104826302" />
+      <entry key="H1" value="805.0594627290463" />
+      <entry key="H2" value="1054.3689693669985" />
+      <entry key="H4" value="1245.129132507773" />
+      <entry key="D1" value="1457.1737246270548" />
+      <entry key="W1" value="1499.7108318101086" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="4.821355393841565E-214" />
-      <entry key="S10" value="2.293973220063287E-107" />
-      <entry key="S30" value="3.8009778392760174E-36" />
-      <entry key="S60" value="2.6743188934698156E-18" />
-      <entry key="M2" value="2.3129177715872964E-9" />
-      <entry key="M5" value="5.811236341507564E-4" />
-      <entry key="M10" value="0.039710504599467705" />
-      <entry key="M15" value="0.16559529496792977" />
-      <entry key="M30" value="0.6995981142487783" />
-      <entry key="H1" value="1.4458656517599304" />
-      <entry key="H2" value="2.081635798020976" />
-      <entry key="H4" value="2.4986611863372508" />
-      <entry key="D1" value="2.909898400539912" />
-      <entry key="W1" value="2.986958199805532" />
+      <entry key="S2" value="5.751701741230156E-85" />
+      <entry key="S5" value="2.9503485073879196E-34" />
+      <entry key="S10" value="2.8117694260113475E-17" />
+      <entry key="S30" value="6.956887388543778E-6" />
+      <entry key="S60" value="0.006184603992079684" />
+      <entry key="M2" value="0.22500650099140126" />
+      <entry key="M5" value="2.2624572659194024" />
+      <entry key="M10" value="5.279478726096245" />
+      <entry key="M15" value="7.350279024170331" />
+      <entry key="M30" value="11.314627016760479" />
+      <entry key="H1" value="15.48661478765367" />
+      <entry key="H2" value="19.103063389973954" />
+      <entry key="H4" value="21.659099294145676" />
+      <entry key="D1" value="24.37542742659663" />
+      <entry key="W1" value="24.908904255853262" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.0060925997614814705" />
-      <entry key="MS500" value="0.547665097802611" />
-      <entry key="S2" value="3.6859364906152057" />
-      <entry key="S5" value="6.216247444176404" />
-      <entry key="S10" value="7.464896909462047" />
-      <entry key="S30" value="8.549224398533847" />
-      <entry key="S60" value="11.250552265142925" />
-      <entry key="M2" value="24.335622191615258" />
-      <entry key="M5" value="69.54096505191009" />
-      <entry key="M10" value="125.03737978341024" />
-      <entry key="M15" value="167.32400930714243" />
-      <entry key="M30" value="255.60700636235296" />
-      <entry key="H1" value="343.15942718394734" />
-      <entry key="H2" value="408.4920654413923" />
-      <entry key="H4" value="448.98286121672214" />
-      <entry key="D1" value="487.6611863433623" />
-      <entry key="W1" value="494.7957274797644" />
+      <entry key="MS100" value="0.6553965676580146" />
+      <entry key="MS500" value="1.2289295817942867" />
+      <entry key="S2" value="2.232637460197413" />
+      <entry key="S5" value="2.6505546220288374" />
+      <entry key="S10" value="2.8351340255710906" />
+      <entry key="S30" value="8.917832115582613" />
+      <entry key="S60" value="35.66967486030043" />
+      <entry key="M2" value="86.89581655776952" />
+      <entry key="M5" value="187.7323308851602" />
+      <entry key="M10" value="298.4877173273732" />
+      <entry key="M15" value="381.7053919905733" />
+      <entry key="M30" value="570.7979963263783" />
+      <entry key="H1" value="820.5033052824293" />
+      <entry key="H2" value="1073.4420901025003" />
+      <entry key="H4" value="1266.7699143144234" />
+      <entry key="D1" value="1481.545466380037" />
+      <entry key="W1" value="1524.619191183492" />
     </decayedShown>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 1
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="3ItUFTIDVbf5aex4lzxxdZruEHx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Vanessa",
-    "junie.onboarding.icon.badge.shown": "true",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.jshint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.jshint": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance",
-    "to.speed.mode.migration.done": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Vanessa&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Nessa\IdeaProjects\Parcial_1_FullStackII\sonido.vivo\img" />
