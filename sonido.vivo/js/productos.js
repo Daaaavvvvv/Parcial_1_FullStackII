@@ -16,11 +16,11 @@ function renderizarTablaProductos() {
     const card = document.createElement("div");
     card.className = "producto-card";
     card.innerHTML = `
-        <a href="producto-detalle.html?codigo=${producto.codigo}" class="producto-imagen">
+        <a href="detalle-de-producto.html?codigo=${producto.codigo}" class="producto-imagen">
             <img src="${producto.imagen}" alt="${producto.nombre}">
         </a>
         <div class="producto-info">
-            <a href="producto-detalle.html?codigo=${producto.codigo}" class="producto-nombre-link">
+            <a href="detalle-de-producto.html?codigo=${producto.codigo}" class="producto-nombre-link">
                 <h3>${producto.nombre}</h3>
             </a>
             <p class="producto-precio">$${producto.precio.toLocaleString("es-CL")}</p>
