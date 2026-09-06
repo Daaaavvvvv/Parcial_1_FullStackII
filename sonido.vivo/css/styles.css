@@ -475,7 +475,6 @@ a, button, input, select, textarea {
 .about-developers{
   border-radius: 8px;
   padding: 30px;
-
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -657,4 +656,129 @@ blockquote {
   text-decoration: none;
   color: #333;
   font-weight: bold;
+}
+/* Sección general y centrado */
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-logo {
+  margin-top: 30px;
+  width: 50%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.contact-header h1 {
+  color: #ffffff; /* Ajusta a oscuro si el fondo no tiene imagen */
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Tarjeta del Formulario */
+.contact-card {
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 550px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.form-header {
+  background-color: #e0e0e0;
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.form-header h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  color: #222;
+}
+
+/* Campos del Formulario */
+.contact-form {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-group label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b0b0b0;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #333;
+}
+
+/* Botón Enviar */
+.btn-submit {
+  align-self: center;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  border: 1.5px solid #222;
+  color: #222;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+  transition: all 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #222;
+  color: #ffffff;
+}
+.char-counter {
+  display: block;
+  text-align: right;
+  font-size: 0.8rem;
+  color: #666666;
+  margin-top: 4px;
+}
+.error-msg {
+  color: #d32f2f;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  min-height: 1.2em;
+  display: block;
+  font-weight: 500;
+}
+.input-error {
+  border-color: #d32f2f !important;
+  background-color: #fdeded;
 }

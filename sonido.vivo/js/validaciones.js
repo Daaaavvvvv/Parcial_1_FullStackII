@@ -504,3 +504,119 @@ document.addEventListener("DOMContentLoaded", () => {
   const formUsuarioEditar = document.getElementById("form-usuario-editar");
   if (formUsuarioEditar) formUsuarioEditar.addEventListener("submit", validarFormularioUsuarioEditar);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('contactForm');
+  const contadorElemento = document.getElementById('contador');
+  const textareaMensaje = document.getElementById('mensaje');
+
+  // ==========================================
+  // LIMPIEZA AL CARGAR / RECARGAR (F5)
+  // ==========================================
+  if (form) {
+    form.reset();
+  }
+  if (contadorElemento) {
+    contadorElemento.textContent = '0';
+  }
+
+  // Forzar limpieza justo en el instante que el usuario presiona F5 o refresca
+  window.addEventListener('beforeunload', function() {
+    if (form) {
+      form.reset();
+    }
+  });
+
+  // Contador de caracteres
+  if (textareaMensaje && contadorElemento) {
+    textareaMensaje.addEventListener('input', function() {
+      const caracteresUsados = this.value.length;
+      contadorElemento.textContent = caracteresUsados;
+      
+      if (caracteresUsados >= 500) {
+        contadorElemento.style.color = 'red';
+      } else {
+        contadorElemento.style.color = '#666666';
+      }
+    });
+  }
+
+  // Validación del Formulario
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // Detiene el envío por defecto
+
+      // Limpiar errores anteriores
+      limpiarErrores();
+
+      let hayError = false;
+
+      // Captura de valores
+      const nombre = document.getElementById('nombre').value.trim();
+      const correo = document.getElementById('correo').value.trim();
+      const mensaje = document.getElementById('mensaje').value.trim();
+
+      // 1. Validar Nombre
+      if (nombre === '') {
+        mostrarError('nombre', 'El nombre es obligatorio.');
+        hayError = true;
+      } else if (nombre.length > 100) {
+        mostrarError('nombre', 'El nombre no puede superar los 100 caracteres.');
+        hayError = true;
+      }
+
+      // 2. Validar Correo
+      if (correo.length > 100) {
+        mostrarError('correo', 'El correo no puede superar los 100 caracteres.');
+        hayError = true;
+      } else if (correo === '') {
+        mostrarError('correo', 'El correo es obligatorio.');
+        hayError = true; 
+      } else if (correo !== '') {
+        const dominiosPermitidos = ['@duoc.cl', '@profesor.duoc.cl', '@gmail.com'];
+        const esValido = dominiosPermitidos.some(dominio => correo.toLowerCase().endsWith(dominio));
+        if (!esValido) {
+          mostrarError('correo', 'Debe terminar en @duoc.cl, @profesor.duoc.cl o @gmail.com');
+          hayError = true;
+        }
+      }
+
+      // 3. Validar Comentario
+      if (mensaje === '') {
+        mostrarError('mensaje', 'El comentario es obligatorio.');
+        hayError = true;
+      } else if (mensaje.length > 500) {
+        mostrarError('mensaje', 'El comentario no puede superar los 500 caracteres.');
+        hayError = true;
+      }
+
+      // Si todo está correcto
+      if (!hayError) {
+        alert('¡Formulario enviado con éxito!');
+        form.reset();
+        if (contadorElemento) {
+          contadorElemento.textContent = '0';
+        }
+      }
+    });
+  }
+
+  // Funciones auxiliares para mostrar/limpiar errores
+  function mostrarError(campoId, mensaje) {
+    const input = document.getElementById(campoId);
+    const errorSpan = document.getElementById(`error-${campoId}`);
+    
+    if (input && errorSpan) {
+      input.classList.add('input-error');
+      errorSpan.textContent = mensaje;
+    }
+  }
+
+  function limpiarErrores() {
+    const errores = document.querySelectorAll('.error-msg');
+    const inputs = document.querySelectorAll('.form-group input, .form-group textarea');
+    
+    errores.forEach(span => span.textContent = '');
+    inputs.forEach(input => input.classList.remove('input-error'));
+  }
+});
