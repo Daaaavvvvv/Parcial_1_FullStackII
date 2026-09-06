@@ -83,6 +83,31 @@ function renderizarDetalleProducto() {
 }
 
 function agregarAlCarritoConCantidad(codigo) {
+    const cantidad = parseInt(document.getElementById("cantidad").value);
+    const producto = listaProductos.find(p => p.codigo === codigo);
+    if (!producto) return;
+
+    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+    const itemExistente = carrito.find(item => item.codigo === codigo);
+
+    if (itemExistente) {
+        itemExistente.cantidad += cantidad;
+    } else {
+        carrito.push({
+            codigo: producto.codigo,
+            nombre: producto.nombre,
+            precio: producto.precio,
+            imagen: producto.imagen,
+            cantidad: cantidad
+        });
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    actualizarContadorCarrito();
+    mostrarModal("Producto agregado al carrito correctamente ✅");
+}
+
+function agregarAlCarritoConCantidad(codigo) {
     const producto = listaProductos.find(p => p.codigo === codigo);
     const selectorCantidad = document.getElementById("cantidad");
 
