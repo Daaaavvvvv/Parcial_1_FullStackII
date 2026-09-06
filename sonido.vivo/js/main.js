@@ -49,4 +49,5 @@ function actualizarContadorCarrito() {
   }
 }
 
+
 document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
