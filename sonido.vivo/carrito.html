@@ -10,9 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-
 <body class="fondo-tienda">
+
 <header class="navbar">
     <a href="index.html" class="logo">
         <img src="img/logo.png" alt="Logo de Sonido Vivo" class="logo-img">
@@ -22,20 +21,20 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="productos.html">Productos</a></li>
-            <li><a href="sobre-nosotros">Nosotros</a></li>
+            <li><a href="sobre-nosotros.html">Nosotros</a></li>
             <li><a href="blogs.html">Blogs</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
     <div class="acciones">
-        <li><a href="login.html">Iniciar sesion</a></li> | <a href="registro.html">Registrarse</a>
-        <a href="carrito.html"> Carrito (<span id="cart-count">0</span>)</a>
+        <a href="login.html">Iniciar sesión</a> | <a href="registro.html">Registrarse</a>
+        <a href="carrito.html">🛒 Cart (<span id="cart-count">0</span>)</a>
     </div>
 </header>
 
-<main class="contenedor-productos">
-    <h1 class="blog-title">MI CARRITO</h1>
+<h1 class="titulo-pagina">Mi Carrito</h1>
 
+<main class="contenedor-productos">
     <table class="tabla-productos">
         <thead>
         <tr>
@@ -48,12 +47,10 @@
         </tr>
         </thead>
         <tbody id="carrito-body">
-
         </tbody>
     </table>
     <h3 id="carrito-total"></h3>
 </main>
-</body>
 
 <footer>
     <p>Sonido Vivo — Tienda de Instrumentos Musicales, Viña del Mar © 2026</p>
@@ -61,6 +58,5 @@
 
 <script src="js/main.js"></script>
 <script src="js/carrito.js"></script>
-<script src="js/productos.js"></script>
 </body>
 </html>
