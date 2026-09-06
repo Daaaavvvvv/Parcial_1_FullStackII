@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="Cambio título página a blogs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/productos.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/productos.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vvv120605&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Daaaavvvvv/Parcial_1_FullStackII.git&quot;,
+    &quot;accountId&quot;: &quot;b5b2a7e3-54f0-4d5d-a20b-028397b83e60&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0085296990580936" />
+      <entry key="MS500" value="1.612148139653823" />
+      <entry key="S2" value="2.9479492200431636" />
+      <entry key="S5" value="3.517456485732507" />
+      <entry key="S10" value="3.765023197839504" />
+      <entry key="S30" value="7.676856518714127" />
+      <entry key="S60" value="21.683345813960106" />
+      <entry key="M2" value="45.99734246113581" />
+      <entry key="M5" value="77.68188427826449" />
+      <entry key="M10" value="95.5746631152284" />
+      <entry key="M15" value="111.86210626298943" />
+      <entry key="M30" value="218.24799195457513" />
+      <entry key="H1" value="537.209521379269" />
+      <entry key="H2" value="1043.1248193959398" />
+      <entry key="H4" value="1545.4525432170722" />
+      <entry key="D1" value="2218.464996621519" />
+      <entry key="W1" value="2367.908554104892" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="8.903456974853E-312" />
+      <entry key="S10" value="2.983866112085998E-156" />
+      <entry key="S30" value="1.4396972152541258E-52" />
+      <entry key="S60" value="1.2093409284251983E-26" />
+      <entry key="M2" value="1.2589166002173976E-13" />
+      <entry key="M5" value="1.2437607692884123E-5" />
+      <entry key="M10" value="0.007305777755182145" />
+      <entry key="M15" value="0.07259098165305522" />
+      <entry key="M30" value="1.0066009458668828" />
+      <entry key="H1" value="4.73885282837085" />
+      <entry key="H2" value="11.248844077893894" />
+      <entry key="H4" value="17.849822031754247" />
+      <entry key="D1" value="26.699115019878313" />
+      <entry key="W1" value="28.658235578004128" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.8135056077248117" />
+      <entry key="MS500" value="1.4528933596562517" />
+      <entry key="S2" value="2.703903830694804" />
+      <entry key="S5" value="3.367024567411089" />
+      <entry key="S10" value="3.6777389659122868" />
+      <entry key="S30" value="7.6374327735573795" />
+      <entry key="S60" value="21.650736599989262" />
+      <entry key="M2" value="45.97046201594685" />
+      <entry key="M5" value="77.66565487685402" />
+      <entry key="M10" value="95.57188747211327" />
+      <entry key="M15" value="111.92559341318315" />
+      <entry key="M30" value="219.23968905734327" />
+      <entry key="H1" value="541.9241097905663" />
+      <entry key="H2" value="1054.3473655089076" />
+      <entry key="H4" value="1563.2818566583248" />
+      <entry key="D1" value="2245.158990079255" />
+      <entry key="W1" value="2396.5660029182754" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3ItUFTIDVbf5aex4lzxxdZruEHx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Vanessa",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.jshint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.jshint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nessa\IdeaProjects\Parcial_1_FullStackII\sonido.vivo\img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="" />
+      <created>1788583255858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788583255858</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Imagenes agregadas" />
+    <MESSAGE value="Productos.html creado y productos.js actualizado" />
+    <MESSAGE value="archivos basura out" />
+    <MESSAGE value="Funciones detalle de producto" />
+    <MESSAGE value="Contador de carrito added" />
+    <MESSAGE value="Logica de carrito creada" />
+    <MESSAGE value="Detalle de producto actualizado" />
+    <MESSAGE value="Funcion detalle-productos act" />
+    <MESSAGE value="Funcion para mostrar modal" />
+    <MESSAGE value="Actualizaciones para funcionamiento de mensajes sugestivos" />
+    <MESSAGE value="Creado para evitar confusiones de listado de productos" />
+    <MESSAGE value="Detalles esteticos actualizado" />
+    <MESSAGE value="Detalles esteticos actualizado y mensajes sugerentes" />
+    <MESSAGE value="Arreglo detalles, listado de productos de admin independiente de listado clientes" />
+    <MESSAGE value="Detalles esteticos, boton de agregar o eliminar mas elementos al carrito" />
+    <MESSAGE value="Cambio título página a blogs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cambio título página a blogs" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

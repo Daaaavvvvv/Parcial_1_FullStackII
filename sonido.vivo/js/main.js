@@ -39,4 +39,28 @@ function cargarComunas() {
   }
 }
 
-document.addEventListener("DOMContentLoaded", cargarRegiones);
+function actualizarContadorCarrito() {
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const totalItems = carrito.reduce((total, item) => total + item.cantidad, 0);
+
+  const contador = document.getElementById("cart-count");
+  if (contador) {
+    contador.textContent = totalItems;
+  }
+}
+
+function mostrarModal(mensaje) {
+  const overlay = document.getElementById("modal-overlay");
+  const texto = document.getElementById("modal-mensaje");
+  if (!overlay || !texto) return;
+
+  texto.textContent = mensaje;
+  overlay.classList.add("activo");
+}
+
+function cerrarModal() {
+  const overlay = document.getElementById("modal-overlay");
+  if (overlay) overlay.classList.remove("activo");
+}
+
+document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
