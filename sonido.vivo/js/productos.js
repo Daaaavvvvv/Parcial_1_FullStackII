@@ -7,10 +7,31 @@ const listaProductos = [
 ];
 
 function renderizarTablaProductos() {
-  const tbody = document.getElementById("tabla-productos-body");
-  if (!tbody) return;
+  const grid = document.getElementById("productos-grid");
+  if (!grid) return;
 
-  tbody.innerHTML = "";
+  grid.innerHTML = "";
+
+  listaProductos.forEach((producto) => {
+    const card = document.createElement("div");
+    card.className = "producto-card";
+    card.innerHTML = `
+        <a href="producto-detalle.html?codigo=${producto.codigo}" class="producto-imagen">
+            <img src="${producto.imagen}" alt="${producto.nombre}">
+        </a>
+        <div class="producto-info">
+            <a href="producto-detalle.html?codigo=${producto.codigo}" class="producto-nombre-link">
+                <h3>${producto.nombre}</h3>
+            </a>
+            <p class="producto-precio">$${producto.precio.toLocaleString("es-CL")}</p>
+            <p class="producto-stock">${producto.stock > 0 ? `Stock: ${producto.stock}` : "Sin stock"}</p>
+            <button class="btn-agregar-card" onclick="agregarAlCarrito('${producto.codigo}')" ${producto.stock === 0 ? "disabled" : ""}>
+                ${producto.stock === 0 ? "Sin stock" : "Añadir al carrito"}
+            </button>
+        </div>
+    `;
+    grid.appendChild(card);
+  });
 
   listaProductos.forEach((producto, index) => {
     const fila = document.createElement("tr");
@@ -38,6 +59,30 @@ function renderizarTablaProductos() {
 function eliminarProducto(index) {
   listaProductos.splice(index, 1);
   renderizarTablaProductos();
+}
+
+function agregarAlCarrito(codigo) {
+  const producto = listaProductos.find(p => p.codigo === codigo);
+  if (!producto || producto.stock === 0) return;
+
+  const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+  const itemExistente = carrito.find(item => item.codigo === codigo);
+
+  if (itemExistente) {
+    itemExistente.cantidad += 1;
+  } else {
+    carrito.push({
+      codigo: producto.codigo,
+      nombre: producto.nombre,
+      precio: producto.precio,
+      imagen: producto.imagen,
+      cantidad: 1
+    });
+  }
+
+  localStorage.setItem("carrito", JSON.stringify(carrito));
+  actualizarContadorCarrito();
+  mostrarModal("Producto agregado al carrito correctamente ✅");
 }
 
 document.addEventListener("DOMContentLoaded", renderizarTablaProductos);

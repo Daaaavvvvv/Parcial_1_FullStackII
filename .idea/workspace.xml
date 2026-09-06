@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="">
+    <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="Actualizaciones para funcionamiento de mensajes sugestivos">
+      <change afterPath="$PROJECT_DIR$/sonido.vivo/js/admin-productos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sonido.vivo/carrito.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/carrito.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sonido.vivo/detalle-de-producto.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/detalle-de-producto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/carrito.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/carrito.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sonido.vivo/js/detalle-productos.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/detalle-productos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/js/productos.js" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/js/productos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/panel-admin/productos-listado.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/panel-admin/productos-listado.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sonido.vivo/productos.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/productos.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,61 +42,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0778195196882394" />
-      <entry key="MS500" value="2.6009261209836767" />
-      <entry key="S2" value="5.089504918977955" />
-      <entry key="S5" value="6.122274172514202" />
-      <entry key="S10" value="6.539246347238975" />
-      <entry key="S30" value="6.8450435686714055" />
-      <entry key="S60" value="7.5161530816590645" />
-      <entry key="M2" value="15.713824665035933" />
-      <entry key="M5" value="72.33376203163019" />
-      <entry key="M10" value="185.03753680705984" />
-      <entry key="M15" value="292.4689237686434" />
-      <entry key="M30" value="568.041321853642" />
-      <entry key="H1" value="953.0341446930404" />
-      <entry key="H2" value="1366.3333894220327" />
-      <entry key="H4" value="1701.1876566417866" />
-      <entry key="D1" value="2092.983438157935" />
-      <entry key="W1" value="2174.030663212014" />
+      <entry key="MS100" value="1.3868912483855973" />
+      <entry key="MS500" value="1.8270233684432657" />
+      <entry key="S2" value="1.9536289906461177" />
+      <entry key="S5" value="1.9811869833404123" />
+      <entry key="S10" value="1.990548829356944" />
+      <entry key="S30" value="1.996839638000814" />
+      <entry key="S60" value="1.9985244984138488" />
+      <entry key="M2" value="2.0138268548710103" />
+      <entry key="M5" value="2.3469052075212984" />
+      <entry key="M10" value="5.230391215874115" />
+      <entry key="M15" value="17.830996964221047" />
+      <entry key="M30" value="128.57955367253737" />
+      <entry key="H1" value="456.18748269542135" />
+      <entry key="H2" value="962.2481516112988" />
+      <entry key="H4" value="1456.9718884367583" />
+      <entry key="D1" value="2112.875001593901" />
+      <entry key="W1" value="2257.733828720347" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="3.5631359188127485E-290" />
-      <entry key="S2" value="4.344683026769059E-73" />
-      <entry key="S5" value="1.1354898041138195E-29" />
-      <entry key="S10" value="3.369702960371785E-15" />
-      <entry key="S30" value="1.4992541524825846E-5" />
-      <entry key="S60" value="0.0039025708750697378" />
-      <entry key="M2" value="0.07151513852055601" />
-      <entry key="M5" value="0.6258889205278717" />
-      <entry key="M10" value="1.6388781360842872" />
-      <entry key="M15" value="2.680008301567188" />
-      <entry key="M30" value="6.11623366794316" />
-      <entry key="H1" value="11.68117657215917" />
-      <entry key="H2" value="17.660971134982745" />
-      <entry key="H4" value="22.36594395423118" />
-      <entry key="D1" value="27.721863660059665" />
-      <entry key="W1" value="28.812548301792546" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.624610307033665E-293" />
+      <entry key="S10" value="6.800448740365385E-147" />
+      <entry key="S30" value="1.8946278243050494E-49" />
+      <entry key="S60" value="4.387075660423633E-25" />
+      <entry key="M2" value="7.58246032996223E-13" />
+      <entry key="M5" value="2.5507161316705628E-5" />
+      <entry key="M10" value="0.010462346373534463" />
+      <entry key="M15" value="0.09222693184029768" />
+      <entry key="M30" value="1.13460548811161" />
+      <entry key="H1" value="5.0311468546935805" />
+      <entry key="H2" value="11.59056971312587" />
+      <entry key="H4" value="18.1189210919635" />
+      <entry key="D1" value="26.765782230250387" />
+      <entry key="W1" value="28.668447383639574" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.0246182205880128" />
-      <entry key="MS500" value="2.4424616060794637" />
-      <entry key="S2" value="5.0110224439919016" />
-      <entry key="S5" value="6.085856963140648" />
-      <entry key="S10" value="6.520088931101103" />
-      <entry key="S30" value="6.838442082358841" />
-      <entry key="S60" value="7.515431916757041" />
-      <entry key="M2" value="15.769707992923674" />
-      <entry key="M5" value="72.9082889149675" />
-      <entry key="M10" value="186.60798695795208" />
-      <entry key="M15" value="295.0792176828838" />
-      <entry key="M30" value="574.0934656609481" />
-      <entry key="H1" value="964.6618732195096" />
-      <entry key="H2" value="1383.955349702" />
-      <entry key="H4" value="1723.5288763241545" />
-      <entry key="D1" value="2120.700127131677" />
-      <entry key="W1" value="2202.842440526348" />
+      <entry key="MS100" value="0.9434237295838301" />
+      <entry key="MS500" value="1.6600596365681282" />
+      <entry key="S2" value="1.905464114102775" />
+      <entry key="S5" value="1.9613443030106834" />
+      <entry key="S10" value="1.9805288331336321" />
+      <entry key="S30" value="1.9934774759523972" />
+      <entry key="S60" value="1.9968405913362834" />
+      <entry key="M2" value="2.0129812005387313" />
+      <entry key="M5" value="2.346492485735476" />
+      <entry key="M10" value="5.23980264541777" />
+      <entry key="M15" value="17.920009528904075" />
+      <entry key="M30" value="129.70127253629508" />
+      <entry key="H1" value="461.1947627480271" />
+      <entry key="H2" value="973.8125565545015" />
+      <entry key="H4" value="1475.0704541015127" />
+      <entry key="D1" value="2139.6357260216837" />
+      <entry key="W1" value="2286.4014999820474" />
     </decayedShown>
   </component>
   <component name="ProblemsViewState">
@@ -188,7 +192,12 @@
     <MESSAGE value="archivos basura out" />
     <MESSAGE value="Funciones detalle de producto" />
     <MESSAGE value="Contador de carrito added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Contador de carrito added" />
+    <MESSAGE value="Logica de carrito creada" />
+    <MESSAGE value="Detalle de producto actualizado" />
+    <MESSAGE value="Funcion detalle-productos act" />
+    <MESSAGE value="Funcion para mostrar modal" />
+    <MESSAGE value="Actualizaciones para funcionamiento de mensajes sugestivos" />
+    <option name="LAST_COMMIT_MESSAGE" value="Actualizaciones para funcionamiento de mensajes sugestivos" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
