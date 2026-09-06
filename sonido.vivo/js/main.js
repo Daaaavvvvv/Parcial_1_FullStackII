@@ -49,5 +49,18 @@ function actualizarContadorCarrito() {
   }
 }
 
+function mostrarModal(mensaje) {
+  const overlay = document.getElementById("modal-overlay");
+  const texto = document.getElementById("modal-mensaje");
+  if (!overlay || !texto) return;
+
+  texto.textContent = mensaje;
+  overlay.classList.add("activo");
+}
+
+function cerrarModal() {
+  const overlay = document.getElementById("modal-overlay");
+  if (overlay) overlay.classList.remove("activo");
+}
 
 document.addEventListener("DOMContentLoaded", actualizarContadorCarrito);
