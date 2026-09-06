@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sonido.vivo/img/fender.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonido.vivo/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sonido.vivo/img/rockeros.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/blogs.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/blogs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/carrito.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/carrito.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/registro.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/registro.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sonido.vivo/sobre-nosotros.html" beforeDir="false" afterPath="$PROJECT_DIR$/sonido.vivo/sobre-nosotros.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vvv120605&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Daaaavvvvv/Parcial_1_FullStackII.git&quot;,
+    &quot;accountId&quot;: &quot;b5b2a7e3-54f0-4d5d-a20b-028397b83e60&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.000000000000099" />
+      <entry key="MS500" value="1.0031821626587794" />
+      <entry key="S2" value="1.8594520941199293" />
+      <entry key="S5" value="4.44792523691463" />
+      <entry key="S10" value="8.082680939772452" />
+      <entry key="S30" value="21.326721429875" />
+      <entry key="S60" value="37.40601102758263" />
+      <entry key="M2" value="61.4077150518308" />
+      <entry key="M5" value="117.08207306596084" />
+      <entry key="M10" value="206.97181384582976" />
+      <entry key="M15" value="296.9372312597015" />
+      <entry key="M30" value="532.4014612385455" />
+      <entry key="H1" value="859.4744475115574" />
+      <entry key="H2" value="1204.0506371558133" />
+      <entry key="H4" value="1477.5863612445" />
+      <entry key="D1" value="1791.7022030617147" />
+      <entry key="W1" value="1855.9500692908903" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="4.2327194349003115E-155" />
+      <entry key="S10" value="1.0650077928507224E-77" />
+      <entry key="S30" value="5.0335300680981825E-26" />
+      <entry key="S60" value="5.260666169975835E-13" />
+      <entry key="M2" value="2.0751977581603236E-6" />
+      <entry key="M5" value="0.021904137359189155" />
+      <entry key="M10" value="0.5194741353685626" />
+      <entry key="M15" value="1.5665794145735894" />
+      <entry key="M30" value="5.223535337019103" />
+      <entry key="H1" value="10.522492947454884" />
+      <entry key="H2" value="15.746501922397638" />
+      <entry key="H4" value="19.664410386427548" />
+      <entry key="D1" value="23.98606443405002" />
+      <entry key="W1" value="24.851670595380906" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.6506709277210417" />
+      <entry key="MS500" value="0.920576243582628" />
+      <entry key="S2" value="1.7932405532746696" />
+      <entry key="S5" value="4.351784149537358" />
+      <entry key="S10" value="7.9820639783995375" />
+      <entry key="S30" value="21.209753819052114" />
+      <entry key="S60" value="37.27858167542728" />
+      <entry key="M2" value="61.28152596011554" />
+      <entry key="M5" value="117.00095396591605" />
+      <entry key="M10" value="207.41320766439657" />
+      <entry key="M15" value="298.4363570143178" />
+      <entry key="M30" value="537.5685459773241" />
+      <entry key="H1" value="869.9504127231535" />
+      <entry key="H2" value="1219.7633624240539" />
+      <entry key="H4" value="1497.2294986151924" />
+      <entry key="D1" value="1815.683853384551" />
+      <entry key="W1" value="1880.801083445391" />
+    </decayedShown>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="3ItUFTIDVbf5aex4lzxxdZruEHx" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Vanessa&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.jshint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.jshint&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nessa\IdeaProjects\Parcial_1_FullStackII\sonido.vivo\img" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="157e8f36-fe08-4686-84cf-80f7eb3015f8" name="Changes" comment="" />
+      <created>1788583255858</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1788583255858</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Imagenes agregadas" />
+    <MESSAGE value="Productos.html creado y productos.js actualizado" />
+    <MESSAGE value="archivos basura out" />
+    <MESSAGE value="Funciones detalle de producto" />
+    <MESSAGE value="Contador de carrito added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Contador de carrito added" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
