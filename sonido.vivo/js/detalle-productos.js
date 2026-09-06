@@ -50,8 +50,8 @@ function renderizarDetalleProducto() {
                     <label for="cantidad">Cantidad</label>
                     <select id="cantidad" ${producto.stock === 0 ? "disabled" : ""}>
                         ${Array.from({ length: Math.min(producto.stock, 10) }, (_, i) => i + 1)
-                            .map(n => `<option value="${n}">${n}</option>`)
-                            .join("")}
+        .map(n => `<option value="${n}">${n}</option>`)
+        .join("")}
                     </select>
                 </div>
 
@@ -68,7 +68,7 @@ function renderizarDetalleProducto() {
         ${relacionados.length > 0 ? `
             <hr class="separador-relacionados">
             <div class="relacionados">
-                <h3>Productos relacionados</h3>
+                <h3 class="texto-sobre-fondo">Tenemos algo parecido...</h3>
                 <div class="relacionados-grid">
                     ${relacionados.map(p => `
                         <a href="detalle-de-producto.html?codigo=${p.codigo}" class="relacionado-item">
@@ -80,31 +80,6 @@ function renderizarDetalleProducto() {
             </div>
         ` : ""}
     `;
-}
-
-function agregarAlCarritoConCantidad(codigo) {
-    const cantidad = parseInt(document.getElementById("cantidad").value);
-    const producto = listaProductos.find(p => p.codigo === codigo);
-    if (!producto) return;
-
-    const carrito = JSON.parse(localStorage.getItem("carrito")) || [];
-    const itemExistente = carrito.find(item => item.codigo === codigo);
-
-    if (itemExistente) {
-        itemExistente.cantidad += cantidad;
-    } else {
-        carrito.push({
-            codigo: producto.codigo,
-            nombre: producto.nombre,
-            precio: producto.precio,
-            imagen: producto.imagen,
-            cantidad: cantidad
-        });
-    }
-
-    localStorage.setItem("carrito", JSON.stringify(carrito));
-    actualizarContadorCarrito();
-    mostrarModal("Producto agregado al carrito correctamente ✅");
 }
 
 function agregarAlCarritoConCantidad(codigo) {
@@ -133,6 +108,7 @@ function agregarAlCarritoConCantidad(codigo) {
 
     localStorage.setItem("carrito", JSON.stringify(carrito));
     actualizarContadorCarrito();
+    mostrarModal("Producto agregado al carrito correctamente!");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
