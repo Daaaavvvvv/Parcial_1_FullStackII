@@ -782,3 +782,293 @@ blockquote {
   border-color: #d32f2f !important;
   background-color: #fdeded;
 }
+/* Contenedor principal de Inicio */
+.container-home {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Hero Banner */
+.hero-banner {
+  background-color: #e0e0e0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.hero-text {
+  flex: 1;
+}
+
+.hero-text h1 {
+  font-size: 2.2rem;
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+.hero-text p {
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  font-size: 0.95rem;
+}
+
+.btn-hero {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #ffffff;
+  border: 2px solid #000;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn-hero:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.hero-image {
+  flex: 1;
+  height: 250px;
+  background-color: #ccc;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Grilla de Productos (4 columnas) */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.product-card {
+  background-color: #eaeaea;
+  border-radius: 4px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-img {
+  width: 100%;
+  height: 140px;
+  background-color: #ccc;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-info h3 {
+  font-size: 0.9rem;
+  margin: 5px 0 10px 0;
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.attributes {
+  font-weight: 500;
+}
+
+.price {
+  font-weight: bold;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+  .hero-banner {
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.main-footer {
+  background-color: #2b2118;
+  border-top: 1px solid #333333;
+  padding: 30px 0 20px 0;
+  color: #ffffff;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between; /* Distribuye las 3 columnas de forma uniforme */
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+/* Columna Izquierda */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.site-name {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.payment-methods {
+  display: flex;
+  align-items: center; /* Alinea verticalmente las tarjetas de diferente alto */
+  gap: 10px;
+}
+
+.payment-methods img {
+  height: 22px;
+  width: auto;
+  object-fit: contain;
+}
+
+.payment-methods img.img-mastercard {
+  height: 35px;
+}
+
+.payment-methods img.img-amex {
+  height: 45px;
+}
+
+/* Columna Central */
+.footer-categories {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.footer-categories a {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 0 4px;
+}
+
+.footer-categories a:hover {
+  color: #cccccc;
+}
+
+/* Columna Derecha */
+.footer-newsletter p {
+  margin: 0 0 8px 0;
+  font-size: 0.85rem;
+  color: #dddddd;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 6px;
+}
+
+.newsletter-form input {
+  padding: 6px 10px;
+  border: 1px solid #ffffff;
+  border-right: none;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 0.85rem;
+  outline: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.newsletter-form button {
+  padding: 6px 12px;
+  background-color: #444444;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  font-size: 0.85rem;
+  cursor: pointer;
+  border-radius: 0 3px 3px 0;
+  transition: background-color 0.2s;
+}
+
+.newsletter-form button:hover {
+  background-color: #666666;
+}
+
+.copyright {
+  display: block;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+/* Adaptación Celular */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .footer-brand {
+    align-items: center;
+  }
+
+  .payment-methods {
+    justify-content: center;
+  }
+
+  .footer-newsletter {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter-form {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+
+  .newsletter-form input {
+    width: 65%;
+    box-sizing: border-box;
+  }
+
+  .newsletter-form button {
+    width: 35%;
+    box-sizing: border-box;
+  }
+}
