@@ -749,11 +749,6 @@ a, button, input, select, textarea {
     grid-template-columns: 1fr;
   }
 }
-.blog-title {
-  text-align: center;
-  margin-bottom: 30px;
-  text-transform: uppercase;
-}
 
 .blog-container {
   max-width: 900px;
@@ -1093,17 +1088,20 @@ blockquote {
 .hero-image {
   flex: 1;
   height: 250px;
-  background-color: #ccc;
-  border-radius: 4px;
+  border-radius: 8px;
   overflow: hidden;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  border-radius: 8px;
 }
-
 /* Grilla de Productos (4 columnas) */
 .products-grid {
   display: grid;
@@ -1122,28 +1120,21 @@ blockquote {
 
 .product-img {
   width: 100%;
-  height: 140px;
-  background-color: #ccc;
+  height: 180px;
+  background-color: #ffffff;
   margin-bottom: 10px;
-  border-radius: 2px;
+  border-radius: 4px;
   overflow: hidden;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .product-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-
-.titulo-pagina {
-  font-family: var(--fuente-titulo);
-  color: var(--color-blanco);
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 2.2rem;
-  font-weight: 700;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-  margin: 2rem 0 1.5rem;
+  object-fit: contain;
 }
 
 #carrito-total {
@@ -1175,6 +1166,8 @@ blockquote {
   overflow: hidden;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
 }
 
 .producto-card:hover {
@@ -1184,14 +1177,18 @@ blockquote {
 
 .producto-imagen {
   width: 100%;
-  height: 180px;
-  background-color: #f2ede4;
+  height: 200px;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .producto-imagen img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain; 
 }
 
 .product-info h3 {
@@ -1206,6 +1203,14 @@ blockquote {
   justify-content: space-between;
   font-size: 0.8rem;
   color: #333;
+}
+
+/* RESPONSIVE PARA CELULARES */
+@media (max-width: 768px) {
+  .productos-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
 }
 
 .attributes {
@@ -1388,6 +1393,14 @@ blockquote {
   }
 }
 
+.cart-title {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
 .producto-info {
   padding: 1rem;
 }
@@ -1440,4 +1453,12 @@ blockquote {
   text-decoration: none;
   color: inherit;
   display: block;
+}
+
+.my-cart-title {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
