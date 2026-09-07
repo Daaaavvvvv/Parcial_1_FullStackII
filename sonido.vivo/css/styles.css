@@ -581,9 +581,9 @@ a, button, input, select, textarea {
   line-height: 1.6;
 }
 .logo img {
-    height: 80px; /* Ajusta la altura según el diseño de tu navbar */
-    width: auto;  /* Mantiene la proporción original */
-    display: block;
+  height: 80px; /* Ajusta la altura según el diseño de tu navbar */
+  width: auto;  /* Mantiene la proporción original */
+  display: block;
 }
 /* Reseteo básico para evitar distorsiones de tamaño */
 *, *::before, *::after {
@@ -1227,7 +1227,7 @@ blockquote {
     flex-direction: column;
     padding: 20px;
   }
-  
+
   .products-grid {
     grid-template-columns: repeat(2, 1fr);
   }
