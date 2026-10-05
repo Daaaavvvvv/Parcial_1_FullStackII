@@ -12,8 +12,14 @@ dist
 dist-ssr
 *.local
 
+<<<<<<< HEAD
 coverage/
 test-results/
+=======
+# Resultados generados por testing
+frontend/coverage/
+frontend/test-results/
+>>>>>>> 31c0073 (docs: actualizar README)
 
 # Editor directories and files
 .vscode/*
