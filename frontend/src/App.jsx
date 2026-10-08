@@ -4,6 +4,7 @@ import PaginaPendiente from './pages/PaginaPendiente.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
 import SobreNosotros from './pages/SobreNosotros.jsx';
 import Blogs from './pages/Blogs.jsx';
+import Contacto from './pages/Contacto.jsx';
 import { DetalleBlog } from './pages/DetalleBlog'; // <- Ya tenías el import listo
 import './assets/styles.css';
 
@@ -20,7 +21,7 @@ function App() {
         <Route path="ofertas" element={<PaginaPendiente titulo="Ofertas" />} />
         <Route path="sobre-nosotros" element={<SobreNosotros />} />
         <Route path="nosotros" element={<SobreNosotros />} />
-        <Route path="contacto" element={<PaginaPendiente titulo="Contacto" />} />
+        <Route path="contacto" element={<Contacto />} />
         
         {/* BLOGS */}
         <Route path="blogs" element={<Blogs />} />
