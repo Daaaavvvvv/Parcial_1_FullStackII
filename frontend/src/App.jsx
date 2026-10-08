@@ -1,6 +1,9 @@
 import { Link, Route, Routes } from 'react-router';
 import PaginaPendiente from './pages/PaginaPendiente.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
+import SobreNosotros from './pages/SobreNosotros.jsx';
+import Blogs from './pages/Blogs.jsx';
+import './assets/styles.css';
 
 function App() {
   return (
@@ -32,7 +35,7 @@ function App() {
         <Route path="/ofertas" element={<PaginaPendiente titulo="Ofertas" />} />
         <Route path="/nosotros" element={<PaginaPendiente titulo="Nosotros" />} />
         <Route path="/contacto" element={<PaginaPendiente titulo="Contacto" />} />
-        <Route path="/blogs" element={<PaginaPendiente titulo="Blogs" />} />
+        <Route path="/blogs" element={<Blogs />} />
         <Route path="/blogs/:id" element={<PaginaPendiente titulo="Detalle del blog" />} />
 
         {/* Acceso */}
