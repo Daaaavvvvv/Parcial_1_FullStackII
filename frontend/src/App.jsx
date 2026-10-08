@@ -1,4 +1,5 @@
-import { Link, Route, Routes } from 'react-router';
+import { Link, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout.jsx';
 import PaginaPendiente from './pages/PaginaPendiente.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
 import SobreNosotros from './pages/SobreNosotros.jsx';
