@@ -38,7 +38,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/fondo-tienda.jpg');
+  background-image: url('/img/fondo-tienda.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(6px) brightness(0.5);
