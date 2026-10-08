@@ -1,14 +1,31 @@
-// Configuración de Karma: abre un navegador real, carga las pruebas de Jasmine y muestra resultados.
-// Es .cjs porque Karma lee su configuración con require() (CommonJS) y el proyecto es "type": "module".
+const fs = require('fs');
+
+if (process.platform === 'win32' && !process.env.CHROME_BIN) {
+  const chrome64 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
+  const chrome32 = 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe';
+  if (fs.existsSync(chrome64)) {
+    process.env.CHROME_BIN = chrome64;
+  } else if (fs.existsSync(chrome32)) {
+    process.env.CHROME_BIN = chrome32;
+  }
+}
+
 module.exports = function (config) {
-  // `karma start --coverage` activa la medición de cobertura (Parte 6.6).
-  const coverage = process.argv.includes('--coverage')
+  const coverage = process.argv.includes('--coverage');
 
   config.set({
     frameworks: ['jasmine', 'webpack'],
+    plugins: [
+      require('karma-jasmine'),
+      require('karma-webpack'),
+      require('karma-chrome-launcher'),
+      require('karma-edge-launcher'),
+      require('karma-jasmine-html-reporter'),
+      require('karma-junit-reporter'),
+      require('karma-coverage')
+    ],
     files: [
       'src/test/setup.js',
-      // Dos patrones en vez de '*.spec.{js,jsx}': Karma 6 falla con las llaves {…} en los globs.
       { pattern: 'src/**/*.spec.js', watched: false },
       { pattern: 'src/**/*.spec.jsx', watched: false },
     ],
@@ -26,13 +43,10 @@ module.exports = function (config) {
           {
             test: /\.jsx?$/,
             exclude: /node_modules/,
-            // El proyecto es "type": "module"; sin esto webpack trata src/ como ESM estricto y el
-            // `import X from` de paquetes CommonJS (como jasmine-dom) devuelve { default: X }.
             type: 'javascript/auto',
             use: {
               loader: 'babel-loader',
               options: {
-                // configFile/babelrc en false: esta config de Babel es solo para las pruebas.
                 babelrc: false,
                 configFile: false,
                 presets: [['@babel/preset-react', { runtime: 'automatic' }]],
@@ -46,7 +60,6 @@ module.exports = function (config) {
       },
     },
     reporters: ['progress', 'kjhtml', 'junit', ...(coverage ? ['coverage'] : [])],
-    // Informe JUnit (XML): lo entienden GitHub Actions, Jenkins, GitLab… Sirve como evidencia.
     junitReporter: { outputDir: 'test-results', useBrowserName: false, outputFile: 'junit.xml' },
     coverageReporter: {
       dir: 'coverage',
@@ -57,10 +70,21 @@ module.exports = function (config) {
       },
     },
     client: { jasmine: { random: true }, clearContext: false },
-    browsers: ['ChromeHeadless'],
+
+    browsers: ['ChromeHeadless', 'EdgeHeadlessCustom'],
+
     customLaunchers: {
       ChromeHeadlessCI: { base: 'ChromeHeadless', flags: ['--no-sandbox'] },
+      EdgeHeadlessCustom: {
+        base: 'Edge',
+        flags: [
+          '--headless=new',
+          '--disable-gpu',
+          '--no-sandbox'
+        ]
+      }
     },
-    restartOnFileChange: true,
-  })
-} 
+    singleRun: true, // Se ejecuta una vez y se cierra automáticamente al finalizar
+    restartOnFileChange: false,
+  });
+};
