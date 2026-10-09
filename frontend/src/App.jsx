@@ -5,6 +5,7 @@ import PaginaPendiente from './pages/PaginaPendiente.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
 import SobreNosotros from './pages/SobreNosotros.jsx';
 import './assets/styles.css';
+import Contacto from './pages/Contacto.jsx';
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Route path="/categorias/:id" element={<PaginaPendiente titulo="Productos de la categoría" />} />
         <Route path="/ofertas" element={<PaginaPendiente titulo="Ofertas" />} />
         <Route path="/sobre-nosotros" element={<SobreNosotros />} />
-        <Route path="/contacto" element={<PaginaPendiente titulo="Contacto" />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="/blogs" element={<PaginaPendiente titulo="Blogs" />} />
         <Route path="/blogs/:id" element={<PaginaPendiente titulo="Detalle del blog" />} />
 

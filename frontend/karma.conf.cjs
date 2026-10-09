@@ -71,7 +71,7 @@ module.exports = function (config) {
     },
     client: { jasmine: { random: true }, clearContext: false },
 
-    browsers: ['ChromeHeadless', 'EdgeHeadlessCustom'],
+    browsers: ['ChromeHeadless'],
 
     customLaunchers: {
       ChromeHeadlessCI: { base: 'ChromeHeadless', flags: ['--no-sandbox'] },

@@ -1,12 +1,14 @@
 <?xml version="1.0"?>
-<testsuite name="Edge 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-08T02:09:55" id="0" hostname="PC-AMD" tests="4" errors="0" failures="0" time="0.025">
+<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-09T18:00:13" id="0" hostname="DESKTOP-4RML5LA" tests="6" errors="0" failures="0" time="0.144">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36 Edg/154.0.0.0"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.018" classname="Página no encontrada"/>
-  <testcase name="Página no encontrada muestra el título" time="0.003" classname="Página no encontrada"/>
-  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.002" classname="SobreNosotros Component"/>
-  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.002" classname="SobreNosotros Component"/>
+  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.052" classname="SobreNosotros Component"/>
+  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.008" classname="SobreNosotros Component"/>
+  <testcase name="Navbar debe abrir y cerrar el menú al hacer clic" time="0.046" classname="Navbar"/>
+  <testcase name="Navbar debe mostrar los enlaces con sus rutas correctas" time="0.02" classname="Navbar"/>
+  <testcase name="Página no encontrada muestra el título" time="0.012" classname="Página no encontrada"/>
+  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.006" classname="Página no encontrada"/>
   <system-out>
     <![CDATA[
 ]]>
