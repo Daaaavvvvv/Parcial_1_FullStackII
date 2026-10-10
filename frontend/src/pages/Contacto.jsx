@@ -1,11 +1,12 @@
 
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 export default function Contacto({ onEnviar = () => {} }) {
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
   const [mensaje, setMensaje] = useState('');
   const [errores, setErrores] = useState({});
+  const [confirmacion, setConfirmacion] = useState('');
 
   const validarFormulario = () => {
     const nuevosErrores = {};
@@ -30,17 +31,51 @@ export default function Contacto({ onEnviar = () => {} }) {
 
   const manejarEnvio = (e) => {
     e.preventDefault();
+    setConfirmacion('');
 
     const nuevosErrores = validarFormulario();
     setErrores(nuevosErrores);
 
-    if (Object.keys(nuevosErrores).length === 0) {
-      onEnviar({
-        nombre: nombre.trim(),
-        correo: correo.trim(),
-        mensaje: mensaje.trim()
-      });
+    if (Object.keys(nuevosErrores).length > 0) {
+      return;
     }
+
+    const contacto = {
+      nombre: nombre.trim(),
+      correo: correo.trim(),
+      mensaje: mensaje.trim(),
+      fecha: new Date().toISOString()
+    };
+
+    try {
+      const contactosGuardados = JSON.parse(
+        localStorage.getItem('contactos') || '[]'
+      );
+
+      contactosGuardados.push(contacto);
+
+      localStorage.setItem(
+        'contactos',
+        JSON.stringify(contactosGuardados)
+      );
+    } catch {
+      setConfirmacion(
+        'No se pudo guardar el mensaje. Inténtalo nuevamente.'
+      );
+      return;
+    }
+
+    onEnviar({
+      nombre: contacto.nombre,
+      correo: contacto.correo,
+      mensaje: contacto.mensaje
+    });
+
+    setNombre('');
+    setCorreo('');
+    setMensaje('');
+    setErrores({});
+    setConfirmacion('Mensaje guardado correctamente');
   };
 
   return (
@@ -66,7 +101,9 @@ export default function Contacto({ onEnviar = () => {} }) {
             onSubmit={manejarEnvio}
           >
             <div className="form-group">
-              <label htmlFor="nombre">NOMBRE COMPLETO *</label>
+              <label htmlFor="nombre">
+                NOMBRE COMPLETO *
+              </label>
               <input
                 type="text"
                 id="nombre"
@@ -81,7 +118,9 @@ export default function Contacto({ onEnviar = () => {} }) {
             </div>
 
             <div className="form-group">
-              <label htmlFor="correo">CORREO *</label>
+              <label htmlFor="correo">
+                CORREO *
+              </label>
               <input
                 type="text"
                 id="correo"
@@ -96,7 +135,9 @@ export default function Contacto({ onEnviar = () => {} }) {
             </div>
 
             <div className="form-group">
-              <label htmlFor="mensaje">COMENTARIO *</label>
+              <label htmlFor="mensaje">
+                COMENTARIO *
+              </label>
               <textarea
                 id="mensaje"
                 name="mensaje"
@@ -112,6 +153,10 @@ export default function Contacto({ onEnviar = () => {} }) {
                 {errores.mensaje}
               </span>
             </div>
+
+            {confirmacion && (
+              <p role="status">{confirmacion}</p>
+            )}
 
             <button type="submit" className="btn-submit">
               ENVIAR MENSAJE
