@@ -2,6 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import PaginaPendiente from './pages/PaginaPendiente.jsx';
 import NoEncontrada from './pages/NoEncontrada.jsx';
+import Home from './pages/Home';
 import SobreNosotros from './pages/SobreNosotros.jsx';
 import Blogs from './pages/Blogs.jsx';
 import Contacto from './pages/Contacto.jsx';
@@ -13,7 +14,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Layout />}>
         {/* Tienda */}
-        <Route index element={<PaginaPendiente titulo="Inicio" />} />
+        <Route index element={<Home />} />
         <Route path="productos" element={<PaginaPendiente titulo="Productos" />} />
         <Route path="productos/:codigo" element={<PaginaPendiente titulo="Detalle de producto" />} />
         <Route path="categorias" element={<PaginaPendiente titulo="Categorías" />} />

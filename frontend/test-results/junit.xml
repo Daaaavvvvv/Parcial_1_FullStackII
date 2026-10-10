@@ -1,10 +1,20 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-05T00:13:59" id="0" hostname="DESKTOP-4RML5LA" tests="2" errors="0" failures="0" time="0.064">
+<testsuite name="Chrome Headless 155.0.0.0 (Windows 10)" package="" timestamp="2026-10-10T18:27:20" id="0" hostname="PC-AMD" tests="12" errors="0" failures="0" time="0.099">
   <properties>
-    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"/>
+    <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/155.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.057" classname="Página no encontrada"/>
-  <testcase name="Página no encontrada muestra el título" time="0.007" classname="Página no encontrada"/>
+  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.014" classname="SobreNosotros Component"/>
+  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.002" classname="SobreNosotros Component"/>
+  <testcase name="Componente Contacto (Pruebas) muestra un error cuando el correo no tiene un dominio permitido" time="0.053" classname="Componente Contacto (Pruebas)"/>
+  <testcase name="Componente DetalleBlog (Pruebas) muestra un mensaje de error si el artículo del blog no existe" time="0.006" classname="Componente DetalleBlog (Pruebas)"/>
+  <testcase name="Componente DetalleBlog (Pruebas) renderiza correctamente el contenido del blog cuando el ID existe" time="0.003" classname="Componente DetalleBlog (Pruebas)"/>
+  <testcase name="Componente Blogs (Pruebas) renderiza el título principal de noticias" time="0.003" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="Componente Blogs (Pruebas) muestra los artículos del blog correctamente" time="0.003" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="Componente Blogs (Pruebas) contiene los botones de enlace para leer los artículos" time="0.003" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="Componente Home (Pruebas) renderiza el banner principal y el botón de productos" time="0.003" classname="Componente Home (Pruebas)"/>
+  <testcase name="Componente Home (Pruebas) muestra las tarjetas de productos destacados con sus enlaces" time="0.004" classname="Componente Home (Pruebas)"/>
+  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.004" classname="Página no encontrada"/>
+  <testcase name="Página no encontrada muestra el título" time="0.001" classname="Página no encontrada"/>
   <system-out>
     <![CDATA[
 ]]>
