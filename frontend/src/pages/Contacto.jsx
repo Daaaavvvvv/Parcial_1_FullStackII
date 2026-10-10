@@ -1,44 +1,51 @@
 
 import React, { useState } from 'react';
 
-export default function Contacto() {
-
-  // Estados para guardar los datos del formulario
+export default function Contacto({ onEnviar = () => {} }) {
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
   const [mensaje, setMensaje] = useState('');
+  const [errores, setErrores] = useState({});
 
-  // Función para validar los datos
   const validarFormulario = () => {
-    const errores = {};
+    const nuevosErrores = {};
+    const correoValido = /^[^\s@]+@(duoc\.cl|profesor\.duoc\.cl|gmail\.com)$/i;
 
-    // Validar nombre
-    if (nombre.trim() === '') {
-      errores.nombre = 'El nombre es obligatorio';
+    if (!nombre.trim()) {
+      nuevosErrores.nombre = 'El nombre es obligatorio';
     }
 
-    // Validar correo
-    const correoValido = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (correo.trim() === '') {
-      errores.correo = 'El correo es obligatorio';
-    } else if (!correoValido.test(correo)) {
-      errores.correo = 'Ingresa un correo válido';
+    if (!correo.trim()) {
+      nuevosErrores.correo = 'El correo es obligatorio';
+    } else if (!correoValido.test(correo.trim())) {
+      nuevosErrores.correo = 'Ingresa un correo válido';
     }
 
-    // Validar comentario
-    if (mensaje.trim() === '') {
-      errores.mensaje = 'El comentario es obligatorio';
+    if (!mensaje.trim()) {
+      nuevosErrores.mensaje = 'El comentario es obligatorio';
     }
 
-    return errores;
+    return nuevosErrores;
+  };
+
+  const manejarEnvio = (e) => {
+    e.preventDefault();
+
+    const nuevosErrores = validarFormulario();
+    setErrores(nuevosErrores);
+
+    if (Object.keys(nuevosErrores).length === 0) {
+      onEnviar({
+        nombre: nombre.trim(),
+        correo: correo.trim(),
+        mensaje: mensaje.trim()
+      });
+    }
   };
 
   return (
     <main className="container-contact">
       <section className="contact-section">
-
-        {/* Logo de la empresa */}
         <div className="contact-header">
           <img
             src="/img/logo.png"
@@ -47,7 +54,6 @@ export default function Contacto() {
           />
         </div>
 
-        {/* Tarjeta del formulario */}
         <div className="contact-card">
           <div className="form-header">
             <h2>FORMULARIO DE CONTACTO</h2>
@@ -57,13 +63,10 @@ export default function Contacto() {
             id="contactForm"
             className="contact-form"
             noValidate
+            onSubmit={manejarEnvio}
           >
-
-            {/* Nombre completo */}
             <div className="form-group">
-              <label htmlFor="nombre">
-                NOMBRE COMPLETO *
-              </label>
+              <label htmlFor="nombre">NOMBRE COMPLETO *</label>
               <input
                 type="text"
                 id="nombre"
@@ -72,17 +75,13 @@ export default function Contacto() {
                 value={nombre}
                 onChange={(e) => setNombre(e.target.value)}
               />
-              <span
-                className="error-msg"
-                id="error-nombre"
-              ></span>
+              <span className="error-msg" id="error-nombre">
+                {errores.nombre}
+              </span>
             </div>
 
-            {/* Correo */}
             <div className="form-group">
-              <label htmlFor="correo">
-                CORREO *
-              </label>
+              <label htmlFor="correo">CORREO *</label>
               <input
                 type="text"
                 id="correo"
@@ -91,17 +90,13 @@ export default function Contacto() {
                 value={correo}
                 onChange={(e) => setCorreo(e.target.value)}
               />
-              <span
-                className="error-msg"
-                id="error-correo"
-              ></span>
+              <span className="error-msg" id="error-correo">
+                {errores.correo}
+              </span>
             </div>
 
-            {/* Comentario */}
             <div className="form-group">
-              <label htmlFor="mensaje">
-                COMENTARIO *
-              </label>
+              <label htmlFor="mensaje">COMENTARIO *</label>
               <textarea
                 id="mensaje"
                 name="mensaje"
@@ -110,26 +105,17 @@ export default function Contacto() {
                 value={mensaje}
                 onChange={(e) => setMensaje(e.target.value)}
               />
-
-              {/* Contador de caracteres */}
               <small className="char-counter">
                 {mensaje.length} / 500 caracteres
               </small>
-
-              <span
-                className="error-msg"
-                id="error-mensaje"
-              ></span>
+              <span className="error-msg" id="error-mensaje">
+                {errores.mensaje}
+              </span>
             </div>
 
-            {/* Botón de envío */}
-            <button
-              type="submit"
-              className="btn-submit"
-            >
+            <button type="submit" className="btn-submit">
               ENVIAR MENSAJE
             </button>
-
           </form>
         </div>
       </section>
