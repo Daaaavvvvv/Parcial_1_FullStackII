@@ -19,6 +19,9 @@ import Registro from './pages/Registro.jsx';
 import AdminUsuarios from './pages/AdminUsuarios.jsx';
 import NuevoUsuario from './pages/NuevoUsuario.jsx';
 import EditarUsuario from './pages/EditarUsuario.jsx';
+import AdminProductos from './pages/AdminProductos.jsx';
+import NuevoProducto from './pages/NuevoProducto.jsx';
+import EditarProducto from './pages/EditarProducto.jsx';
 import './assets/styles.css';
 
 function App() {
@@ -54,11 +57,11 @@ function App() {
       {/* 2. Rutas de Administración (Aisladas con AdminLayout) */}
       <Route element={<AdminLayout />}>
         <Route path="admin" element={<PaginaPendiente titulo="Panel de administración" />} />
-        <Route path="admin/productos" element={<PaginaPendiente titulo="Administrar productos" />} />
-        <Route path="admin/productos/nuevo" element={<PaginaPendiente titulo="Nuevo producto" />} />
+        <Route path="admin/productos" element={<AdminProductos />} />
+        <Route path="admin/productos/nuevo" element={<NuevoProducto />} />
         <Route path="admin/productos/stock-bajo" element={<PaginaPendiente titulo="Productos con pocas unidades" />} />
-        <Route path="admin/productos/:codigo" element={<PaginaPendiente titulo="Consultar producto" />} />
-        <Route path="admin/productos/:codigo/editar" element={<PaginaPendiente titulo="Editar producto" />} />
+        <Route path="admin/productos/:codigo" element={<AdminProductos />} />
+        <Route path="admin/productos/:codigo/editar" element={<EditarProducto />} />
 
         <Route path="admin/categorias" element={<PaginaPendiente titulo="Administrar categorías" />} />
         <Route path="admin/categorias/nueva" element={<PaginaPendiente titulo="Nueva categoría" />} />
