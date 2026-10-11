@@ -1469,3 +1469,59 @@ blockquote {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+
+.detalle-stock {
+  color: #2b2118;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.detalle-aviso {
+  background-color: #f7f4ef;
+  color: #2b2118;
+  border-left: 4px solid #d4a24c;
+  border-radius: 4px;
+  padding: 0.9rem 1rem;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+.detalle-enlaces {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.detalle-enlaces a {
+  color: #2b2118;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #d4a24c;
+  text-underline-offset: 4px;
+}
+
+.detalle-enlaces a:hover {
+  color: #d4a24c;
+}
+
+.detalle-encabezado {
+  flex-wrap: wrap;
+}
+
+.detalle-encabezado h1 {
+  overflow-wrap: anywhere;
+}
+
+.detalle-info .btn-agregar:focus-visible,
+.detalle-enlaces a:focus-visible {
+  outline: 3px solid #d4a24c;
+  outline-offset: 3px;
+}
+
+.relacionado-item span {
+  display: block;
+  color: #d4a24c;
+  font-weight: 700;
+  margin-top: 0.3rem;
+}

@@ -9,6 +9,7 @@ import Blogs from './pages/Blogs.jsx';
 import Contacto from './pages/Contacto.jsx';
 import { DetalleBlog } from './pages/DetalleBlog';
 import Productos from './pages/Productos.jsx';
+import DetalleProducto from './pages/DetalleProducto.jsx';
 import Login from './pages/Login.jsx';
 import Registro from './pages/Registro.jsx';
 import AdminUsuarios from './pages/AdminUsuarios.jsx';
@@ -23,7 +24,7 @@ function App() {
       <Route element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="productos" element={<Productos />} />
-        <Route path="productos/:codigo" element={<PaginaPendiente titulo="Detalle de producto" />} />
+        <Route path="productos/:codigo" element={<DetalleProducto />} />
         <Route path="categorias" element={<PaginaPendiente titulo="Categorías" />} />
         <Route path="categorias/:id" element={<PaginaPendiente titulo="Productos de la categoría" />} />
         <Route path="ofertas" element={<PaginaPendiente titulo="Ofertas" />} />
