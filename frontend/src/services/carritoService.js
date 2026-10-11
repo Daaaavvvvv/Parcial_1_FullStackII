@@ -55,3 +55,49 @@ export function agregarAlCarrito(codigo) {
   guardarCarrito(carrito);
   return carrito;
 }
+  
+  export function agregarCantidadAlCarrito(codigo, cantidad) {
+  const producto = obtenerProducto(codigo);
+
+  if (!producto) {
+    throw new Error('El producto no existe');
+  }
+
+  if (!Number.isInteger(cantidad) || cantidad < 1) {
+    throw new Error('La cantidad debe ser un entero mayor a cero');
+  }
+
+  const carrito = leerCarrito();
+
+  const existente = carrito.find(
+    (item) => item.codigo === producto.codigo
+  );
+
+  const cantidadActual = existente?.cantidad || 0;
+
+  if (cantidadActual + cantidad > producto.stock) {
+    throw new Error('No hay suficientes unidades disponibles');
+  }
+
+  const actualizado = carrito.map((item) => ({ ...item }));
+
+  const itemActual = actualizado.find(
+    (item) => item.codigo === producto.codigo
+  );
+
+  if (itemActual) {
+    itemActual.cantidad += cantidad;
+  } else {
+    actualizado.push({
+      codigo: producto.codigo,
+      nombre: producto.nombre,
+      precio: producto.precio,
+      imagen: producto.imagen,
+      cantidad
+    });
+  }
+
+  guardarCarrito(actualizado);
+
+  return actualizado;
+}
