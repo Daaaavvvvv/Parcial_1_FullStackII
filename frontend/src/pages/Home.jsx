@@ -1,29 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Carrusel from '../components/Carrusel.jsx'; // 👈 Importas el carrusel
 
 export default function Home() {
   return (
     <main className="container-home">
-      {/* Hero Banner Principal */}
-      <section className="hero-banner">
-        <div className="hero-text">
-          <h1>SONIDO VIVO</h1>
-          <p>
-            Encuentra los mejores instrumentos musicales, accesorios y equipos de audio para llevar tu talento al siguiente nivel. ¡Explora nuestro catálogo exclusivo!
-          </p>
-          <Link to="/productos" className="btn-hero">🛒 ver productos</Link>
-        </div>
-        <div className="hero-image">
-          <img src="/img/logoc.jpeg" alt="Instrumentos Sonido Vivo" />
-        </div>
-      </section>
+      {/* Hero Banner Principal reemplazado por el Carrusel */}
+      <Carrusel />
 
       {/* Grilla de Productos Destacados */}
       <section className="products-grid">
         
         {/* Producto 1: Guitarra Fender */}
         <article className="product-card">
-          {/* AHORA LA IMAGEN ES UN ENLACE */}
           <Link to="/productos/GT002" className="product-img-link">
             <div className="product-img">
               <img src="/img/gt002.jpg" alt="Guitarra Eléctrica" />
@@ -42,7 +31,6 @@ export default function Home() {
 
         {/* Producto 2: Batería Roland */}
         <article className="product-card">
-          {/* AHORA LA IMAGEN ES UN ENLACE */}
           <Link to="/productos/BT001" className="product-img-link">
             <div className="product-img">
               <img src="/img/bt001.jpg" alt="Batería Electrónica Roland" />
@@ -61,7 +49,6 @@ export default function Home() {
 
         {/* Producto 3: Teclado Casio */}
         <article className="product-card">
-          {/* AHORA LA IMAGEN ES UN ENLACE */}
           <Link to="/productos/TC001" className="product-img-link">
             <div className="product-img">
               <img src="/img/tc001.jpg" alt="Teclado Casio" />
@@ -80,7 +67,6 @@ export default function Home() {
 
         {/* Producto 4: Amplificador Marshall */}
         <article className="product-card">
-          {/* AHORA LA IMAGEN ES UN ENLACE */}
           <Link to="/productos/AM001" className="product-img-link">
             <div className="product-img">
               <img src="/img/am001.jpg" alt="Amplificador Marshall" />
