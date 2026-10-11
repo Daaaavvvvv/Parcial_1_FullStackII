@@ -23,14 +23,29 @@ describe('Registro e inicio de sesión', () => {
     activo: true
   });
 
+  let respaldoUsuarios;
+  let respaldoSesion;
+
   beforeEach(() => {
+    respaldoUsuarios = localStorage.getItem('sonidoVivo_usuarios');
+    respaldoSesion = sessionStorage.getItem('sonidoVivo_sesion');
+
     localStorage.removeItem('sonidoVivo_usuarios');
     sessionStorage.removeItem('sonidoVivo_sesion');
   });
 
   afterEach(() => {
-    localStorage.removeItem('sonidoVivo_usuarios');
-    sessionStorage.removeItem('sonidoVivo_sesion');
+    if (respaldoUsuarios === null) {
+      localStorage.removeItem('sonidoVivo_usuarios');
+    } else {
+      localStorage.setItem('sonidoVivo_usuarios', respaldoUsuarios);
+    }
+
+    if (respaldoSesion === null) {
+      sessionStorage.removeItem('sonidoVivo_sesion');
+    } else {
+      sessionStorage.setItem('sonidoVivo_sesion', respaldoSesion);
+    }
   });
 
   const completarRegistro = (correo = 'ana@gmail.com') => {
@@ -146,4 +161,14 @@ describe('Registro e inicio de sesión', () => {
 
     expect(obtenerSesion()).toBeNull();
   });
+
+  it('rechaza iniciar sesión con un correo no registrado', () => {
+  agregarUsuario(usuario());
+
+  expect(() =>
+    iniciarSesion('desconocido@gmail.com', 'ClavePrueba123')
+  ).toThrowError('Correo, contraseña o estado de cuenta incorrecto');
+
+  expect(obtenerSesion()).toBeNull();
+}); 
 });

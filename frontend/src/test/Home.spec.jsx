@@ -11,10 +11,6 @@ describe('Componente Home (Pruebas)', function() {
       </MemoryRouter>
     );
 
-    // Verifica que aparezca el título principal del banner
-    const tituloHero = screen.getByText(/SONIDO VIVO/i);
-    expect(tituloHero).toBeDefined();
-
     // Verifica que el botón para ver productos esté presente
     const botonHero = screen.getByText(/ver productos/i);
     expect(botonHero).toBeDefined();

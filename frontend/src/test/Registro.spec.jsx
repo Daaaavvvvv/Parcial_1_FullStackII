@@ -28,12 +28,35 @@ describe('Registro', () => {
     fireEvent.click(screen.getByRole('button', { name: /CREAR CUENTA/i }));
   };
 
+  let respaldoUsuarios;
+  let respaldoSesion;
+
   beforeEach(() => {
+    respaldoUsuarios = localStorage.getItem('sonidoVivo_usuarios');
+    respaldoSesion = sessionStorage.getItem('sonidoVivo_sesion');
+
+    localStorage.removeItem('sonidoVivo_usuarios');
+    sessionStorage.removeItem('sonidoVivo_sesion');
+
     render(
       <MemoryRouter>
         <Registro />
       </MemoryRouter>
     );
+  });
+
+  afterEach(() => {
+    if (respaldoUsuarios === null) {
+      localStorage.removeItem('sonidoVivo_usuarios');
+    } else {
+      localStorage.setItem('sonidoVivo_usuarios', respaldoUsuarios);
+    }
+
+    if (respaldoSesion === null) {
+      sessionStorage.removeItem('sonidoVivo_sesion');
+    } else {
+      sessionStorage.setItem('sonidoVivo_sesion', respaldoSesion);
+    }
   });
 
   it('debe mostrar los campos del formulario', () => {

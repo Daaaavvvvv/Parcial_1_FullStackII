@@ -19,12 +19,19 @@ describe('Servicio de usuarios', () => {
     activo: true
   });
 
+  let respaldoUsuarios;
+
   beforeEach(() => {
+    respaldoUsuarios = localStorage.getItem('sonidoVivo_usuarios');
     localStorage.removeItem('sonidoVivo_usuarios');
   });
 
   afterEach(() => {
-    localStorage.removeItem('sonidoVivo_usuarios');
+    if (respaldoUsuarios === null) {
+      localStorage.removeItem('sonidoVivo_usuarios');
+    } else {
+      localStorage.setItem('sonidoVivo_usuarios', respaldoUsuarios);
+    }
   });
 
   it('debe agregar un usuario correctamente', () => {
