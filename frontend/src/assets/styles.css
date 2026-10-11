@@ -1462,3 +1462,170 @@ blockquote {
   margin-bottom: 30px;
   text-transform: uppercase;
 }
+
+
+.admin-sidebar nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+.admin-cerrar-sesion {
+  background: transparent;
+  border: none;
+  color: var(--color-secundario);
+  font-family: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.admin-cerrar-sesion:hover {
+  text-decoration: underline;
+}
+
+.admin-descripcion {
+  color: #756a60;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.admin-tabla-contenedor {
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.admin-acciones {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.admin-tabla .admin-acciones .btn-accion {
+  margin-right: 0;
+  white-space: nowrap;
+}
+
+.admin-estado {
+  display: inline-block;
+  padding: 0.35rem 0.65rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.admin-estado.activo {
+  background: #e7f3e8;
+  color: #286438;
+}
+
+.admin-estado.inactivo {
+  background: #f5e7e5;
+  color: #a23832;
+}
+
+.admin-panel {
+  background: var(--color-blanco);
+  padding: 2rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.admin-panel h2,
+.admin-panel h3 {
+  color: var(--color-primario);
+  margin-bottom: 1rem;
+}
+
+.admin-panel h3 {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #eee;
+}
+
+.admin-detalle {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem 1.5rem;
+}
+
+.admin-detalle p {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.admin-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.admin-checkbox input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-secundario);
+}
+
+.admin-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.admin-form .admin-btn-cancelar {
+  background: var(--color-blanco);
+  color: var(--color-primario);
+  border: 1px solid var(--color-secundario);
+}
+
+.admin-form .admin-btn-cancelar:hover {
+  background: var(--color-fondo);
+}
+
+.admin-btn-cerrar {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-form .error-msg,
+.admin-contenido .error-msg {
+  color: #b42318;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .admin-layout {
+    flex-direction: column;
+  }
+
+  .admin-sidebar {
+    width: 100%;
+  }
+
+  .admin-contenido {
+    padding: 1.25rem;
+  }
+
+  .admin-header-tabla {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .admin-detalle {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-form {
+    padding: 1.25rem;
+  }
+
+  .admin-tabla {
+    min-width: 740px;
+  }
+}
