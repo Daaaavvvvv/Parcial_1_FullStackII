@@ -6,6 +6,12 @@ import NoEncontrada from './pages/NoEncontrada.jsx';
 import SobreNosotros from './pages/SobreNosotros.jsx';
 import './assets/styles.css';
 import Contacto from './pages/Contacto.jsx';
+import Login from './pages/Login.jsx';
+import Registro from './pages/Registro.jsx';
+import AdminUsuarios from './pages/AdminUsuarios.jsx';
+import NuevoUsuario from './pages/NuevoUsuario.jsx';
+import EditarUsuario from './pages/EditarUsuario.jsx';
+import AdminLayout from './components/AdminLayout.jsx';
 
 function App() {
   return (
@@ -24,8 +30,8 @@ function App() {
         <Route path="/blogs/:id" element={<PaginaPendiente titulo="Detalle del blog" />} />
 
         {/* Acceso y Carrito */}
-        <Route path="/login" element={<PaginaPendiente titulo="Iniciar sesión" />} />
-        <Route path="/registro" element={<PaginaPendiente titulo="Registro" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="/carrito" element={<PaginaPendiente titulo="Carrito" />} />
         <Route path="/checkout" element={<PaginaPendiente titulo="Datos de compra" />} />
         <Route path="/compra/exitosa" element={<PaginaPendiente titulo="Compra exitosa" />} />
@@ -33,27 +39,99 @@ function App() {
       </Route>
 
       {/* 2. Rutas de Administración (aisladas sin el Layout de cliente) */}
-      <Route path="/admin" element={<PaginaPendiente titulo="Panel de administración" />} />
-      <Route path="/admin/productos" element={<PaginaPendiente titulo="Administrar productos" />} />
-      <Route path="/admin/productos/nuevo" element={<PaginaPendiente titulo="Nuevo producto" />} />
-      <Route path="/admin/productos/stock-bajo" element={<PaginaPendiente titulo="Productos con pocas unidades" />} />
-      <Route path="/admin/productos/:codigo" element={<PaginaPendiente titulo="Consultar producto" />} />
-      <Route path="/admin/productos/:codigo/editar" element={<PaginaPendiente titulo="Editar producto" />} />
+      
+<Route element={<AdminLayout />}>
+  <Route
+    path="/admin"
+    element={<PaginaPendiente titulo="Panel de administración" />}
+  />
 
-      <Route path="/admin/categorias" element={<PaginaPendiente titulo="Administrar categorías" />} />
-      <Route path="/admin/categorias/nueva" element={<PaginaPendiente titulo="Nueva categoría" />} />
-      <Route path="/admin/categorias/:id/editar" element={<PaginaPendiente titulo="Editar categoría" />} />
+  <Route
+    path="/admin/productos"
+    element={<PaginaPendiente titulo="Administrar productos" />}
+  />
 
-      <Route path="/admin/usuarios" element={<PaginaPendiente titulo="Administrar usuarios" />} />
-      <Route path="/admin/usuarios/nuevo" element={<PaginaPendiente titulo="Nuevo usuario" />} />
-      <Route path="/admin/usuarios/:id" element={<PaginaPendiente titulo="Consultar usuario" />} />
-      <Route path="/admin/usuarios/:id/editar" element={<PaginaPendiente titulo="Editar usuario" />} />
-      <Route path="/admin/usuarios/:id/compras" element={<PaginaPendiente titulo="Historial de compras" />} />
+  <Route
+    path="/admin/productos/nuevo"
+    element={<PaginaPendiente titulo="Nuevo producto" />}
+  />
 
-      <Route path="/admin/pedidos" element={<PaginaPendiente titulo="Pedidos" />} />
-      <Route path="/admin/pedidos/:id" element={<PaginaPendiente titulo="Detalle del pedido" />} />
-      <Route path="/admin/reportes" element={<PaginaPendiente titulo="Reportes" />} />
-      <Route path="/admin/perfil" element={<PaginaPendiente titulo="Perfil" />} />
+  <Route
+    path="/admin/productos/stock-bajo"
+    element={<PaginaPendiente titulo="Productos con pocas unidades" />}
+  />
+
+  <Route
+    path="/admin/productos/:codigo"
+    element={<PaginaPendiente titulo="Consultar producto" />}
+  />
+
+  <Route
+    path="/admin/productos/:codigo/editar"
+    element={<PaginaPendiente titulo="Editar producto" />}
+  />
+
+  <Route
+    path="/admin/categorias"
+    element={<PaginaPendiente titulo="Administrar categorías" />}
+  />
+
+  <Route
+    path="/admin/categorias/nueva"
+    element={<PaginaPendiente titulo="Nueva categoría" />}
+  />
+
+  <Route
+    path="/admin/categorias/:id/editar"
+    element={<PaginaPendiente titulo="Editar categoría" />}
+  />
+
+  <Route
+    path="/admin/usuarios"
+    element={<AdminUsuarios />}
+  />
+
+  <Route
+    path="/admin/usuarios/nuevo"
+    element={<NuevoUsuario />}
+  />
+
+  <Route
+    path="/admin/usuarios/:id"
+    element={<AdminUsuarios />}
+  />
+
+  <Route
+    path="/admin/usuarios/:id/editar"
+    element={<EditarUsuario />}
+  />
+
+  <Route
+    path="/admin/usuarios/:id/compras"
+    element={<AdminUsuarios />}
+  />
+
+  <Route
+    path="/admin/pedidos"
+    element={<PaginaPendiente titulo="Pedidos" />}
+  />
+
+  <Route
+    path="/admin/pedidos/:id"
+    element={<PaginaPendiente titulo="Detalle del pedido" />}
+  />
+
+  <Route
+    path="/admin/reportes"
+    element={<PaginaPendiente titulo="Reportes" />}
+  />
+
+  <Route
+    path="/admin/perfil"
+    element={<PaginaPendiente titulo="Perfil" />}
+  />
+</Route>
+
 
       {/* Página 404 */}
       <Route path="*" element={<NoEncontrada />} />
