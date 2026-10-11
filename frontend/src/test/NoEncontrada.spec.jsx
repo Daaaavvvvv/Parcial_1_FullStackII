@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react'
 import { MemoryRouter } from 'react-router'
-import NoEncontrada from './NoEncontrada.jsx'
+import NoEncontrada from '../pages/NoEncontrada.jsx';
 
 describe('Página no encontrada', () => {
   beforeEach(() => {

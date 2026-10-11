@@ -6,6 +6,8 @@ import NoEncontrada from './pages/NoEncontrada.jsx';
 import SobreNosotros from './pages/SobreNosotros.jsx';
 import './assets/styles.css';
 import Contacto from './pages/Contacto.jsx';
+import Login from './pages/Login.jsx';
+import Registro from './pages/Registro.jsx';
 
 function App() {
   return (
@@ -24,8 +26,8 @@ function App() {
         <Route path="/blogs/:id" element={<PaginaPendiente titulo="Detalle del blog" />} />
 
         {/* Acceso y Carrito */}
-        <Route path="/login" element={<PaginaPendiente titulo="Iniciar sesión" />} />
-        <Route path="/registro" element={<PaginaPendiente titulo="Registro" />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/registro" element={<Registro />} />
         <Route path="/carrito" element={<PaginaPendiente titulo="Carrito" />} />
         <Route path="/checkout" element={<PaginaPendiente titulo="Datos de compra" />} />
         <Route path="/compra/exitosa" element={<PaginaPendiente titulo="Compra exitosa" />} />

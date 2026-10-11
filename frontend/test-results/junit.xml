@@ -1,36 +1,42 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-11T02:35:03" id="0" hostname="DESKTOP-4RML5LA" tests="28" errors="0" failures="0" time="0.288">
+<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-11T03:06:48" id="0" hostname="DESKTOP-4RML5LA" tests="34" errors="0" failures="0" time="0.401">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="Servicio de usuarios debe rechazar RUN repetidos" time="0.006" classname="Servicio de usuarios"/>
+  <testcase name="Registro e inicio de sesión registra un usuario válido" time="0.136" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión inicia sesión con credenciales correctas" time="0.002" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza una contraseña incorrecta" time="0.003" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión permite cerrar sesión" time="0.001" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza usuarios desactivados" time="0.002" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza un correo repetido" time="0.035" classname="Registro e inicio de sesión"/>
+  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.013" classname="Página no encontrada"/>
+  <testcase name="Página no encontrada muestra el título" time="0.005" classname="Página no encontrada"/>
+  <testcase name="Servicio de usuarios debe rechazar un correo duplicado al editar" time="0.002" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe conservar los usuarios en localStorage" time="0.001" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe rechazar roles inválidos" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar correos inválidos" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe conservar los usuarios en localStorage" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar campos obligatorios vacíos" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar un correo duplicado al editar" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar correos repetidos" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe desactivar y activar un usuario" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar RUN repetidos" time="0.001" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe eliminar un usuario" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar campos obligatorios vacíos" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar correos repetidos" time="0.001" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe agregar un usuario correctamente" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe encontrar un usuario por RUN" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe editar un usuario" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Página no encontrada muestra el título" time="0.045" classname="Página no encontrada"/>
-  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.008" classname="Página no encontrada"/>
-  <testcase name="Formulario de contacto debe guardar los datos válidos en localStorage" time="0.072" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe actualizar el contador de caracteres" time="0.009" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe mostrar los campos del formulario" time="0.006" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto no debe enviar ni guardar un correo inválido" time="0.019" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe mostrar errores cuando los campos están vacíos" time="0.009" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe conservar los mensajes anteriores" time="0.028" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe limpiar los campos después de guardar" time="0.012" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto no debe guardar ni limpiar el formulario inválido" time="0.01" classname="Formulario de contacto"/>
+  <testcase name="Servicio de usuarios debe editar un usuario" time="0" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe encontrar un usuario por RUN" time="0.002" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe desactivar y activar un usuario" time="0.002" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar correos inválidos" time="0" classname="Servicio de usuarios"/>
+  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.007" classname="SobreNosotros Component"/>
+  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.004" classname="SobreNosotros Component"/>
+  <testcase name="Navbar debe abrir y cerrar el menú al hacer clic" time="0.018" classname="Navbar"/>
+  <testcase name="Navbar debe mostrar los enlaces con sus rutas correctas" time="0.015" classname="Navbar"/>
+  <testcase name="Formulario de contacto debe conservar los mensajes anteriores" time="0.045" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto no debe enviar ni guardar un correo inválido" time="0.013" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto no debe guardar ni limpiar el formulario inválido" time="0.014" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe llamar al spy con datos válidos" time="0.015" classname="Formulario de contacto"/>
   <testcase name="Formulario de contacto debe aceptar correos institucionales" time="0.012" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe llamar al spy con datos válidos" time="0.013" classname="Formulario de contacto"/>
-  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.003" classname="SobreNosotros Component"/>
-  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.004" classname="SobreNosotros Component"/>
-  <testcase name="Navbar debe abrir y cerrar el menú al hacer clic" time="0.015" classname="Navbar"/>
-  <testcase name="Navbar debe mostrar los enlaces con sus rutas correctas" time="0.009" classname="Navbar"/>
+  <testcase name="Formulario de contacto debe actualizar el contador de caracteres" time="0.007" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe mostrar los campos del formulario" time="0.006" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe mostrar errores cuando los campos están vacíos" time="0.008" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe guardar los datos válidos en localStorage" time="0.012" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe limpiar los campos después de guardar" time="0.015" classname="Formulario de contacto"/>
   <system-out>
     <![CDATA[
 ]]>
