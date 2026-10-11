@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 if (process.platform === 'win32' && !process.env.CHROME_BIN) {
   const chrome64 = 'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe';
@@ -24,11 +25,23 @@ module.exports = function (config) {
       require('karma-junit-reporter'),
       require('karma-coverage')
     ],
-    files: [
-      'src/test/setup.js',
-      { pattern: 'src/**/*.spec.js', watched: false },
-      { pattern: 'src/**/*.spec.jsx', watched: false },
-    ],
+  files: [
+    'src/test/setup.js',
+    { pattern: 'src/**/*.spec.js', watched: false },
+    { pattern: 'src/**/*.spec.jsx', watched: false },
+
+    {
+      pattern: path.join(__dirname, 'public', 'img', '**', '*'),
+      watched: false,
+      included: false,
+      served: true
+    }
+  ],
+
+    proxies: {
+      '/img/': '/absolute/public/img/'
+    },
+    
     preprocessors: {
       'src/test/setup.js': ['webpack'],
       'src/**/*.spec.js': ['webpack'],

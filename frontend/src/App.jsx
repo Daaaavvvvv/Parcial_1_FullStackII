@@ -10,6 +10,10 @@ import Contacto from './pages/Contacto.jsx';
 import { DetalleBlog } from './pages/DetalleBlog';
 import Productos from './pages/Productos.jsx';
 import DetalleProducto from './pages/DetalleProducto.jsx';
+import Carrito from './pages/Carrito.jsx';
+import Checkout from './pages/Checkout.jsx';
+import CompraExitosa from './pages/CompraExitosa.jsx';
+import CompraError from './pages/CompraError.jsx';
 import Login from './pages/Login.jsx';
 import Registro from './pages/Registro.jsx';
 import AdminUsuarios from './pages/AdminUsuarios.jsx';
@@ -41,10 +45,10 @@ function App() {
         <Route path="registro" element={<Registro />} />
 
         {/* Compra */}
-        <Route path="carrito" element={<PaginaPendiente titulo="Carrito" />} />
-        <Route path="checkout" element={<PaginaPendiente titulo="Datos de compra" />} />
-        <Route path="compra/exitosa" element={<PaginaPendiente titulo="Compra exitosa" />} />
-        <Route path="compra/error" element={<PaginaPendiente titulo="Compra fallida" />} />
+        <Route path="/carrito" element={<Carrito />} />
+        <Route path="checkout" element={<Checkout />} />
+        <Route path="compra/exitosa" element={<CompraExitosa />} />
+        <Route path="compra/error" element={<CompraError />} />
       </Route>
 
       {/* 2. Rutas de Administración (Aisladas con AdminLayout) */}
