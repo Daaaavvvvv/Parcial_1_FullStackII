@@ -1,3 +1,4 @@
+
 import { productosIniciales } from '../data/productos.js';
 
 const CLAVE_STORAGE = 'productos';
@@ -9,6 +10,7 @@ function leerProductos() {
   } catch {
     /* sin storage o JSON dañado: se usan los productos iniciales */
   }
+
   return productosIniciales.map((p) => ({ ...p }));
 }
 
@@ -30,26 +32,38 @@ function aNumero(valor) {
 
 function armarProducto(codigo, datos) {
   const nombre = String(datos.nombre ?? '').trim();
-  if (!nombre) throw new Error('El nombre es obligatorio');
+
+  if (!nombre) {
+    throw new Error('El nombre es obligatorio');
+  }
 
   const categoria = String(datos.categoria ?? '').trim();
-  if (!categoria) throw new Error('La categoría es obligatoria');
+
+  if (!categoria) {
+    throw new Error('La categoría es obligatoria');
+  }
 
   const precio = aNumero(datos.precio);
+
   if (!Number.isFinite(precio) || precio <= 0) {
     throw new Error('El precio debe ser un número mayor a 0');
   }
 
   const stock = aNumero(datos.stock);
+
   if (!Number.isInteger(stock) || stock < 0) {
     throw new Error('El stock debe ser un número entero mayor o igual a 0');
   }
 
   let stockCritico = null;
+
   if (datos.stockCritico !== '' && datos.stockCritico != null) {
     stockCritico = Number(datos.stockCritico);
+
     if (!Number.isInteger(stockCritico) || stockCritico < 0) {
-      throw new Error('El stock crítico debe ser un número entero mayor o igual a 0');
+      throw new Error(
+        'El stock crítico debe ser un número entero mayor o igual a 0'
+      );
     }
   }
 
@@ -61,22 +75,27 @@ function armarProducto(codigo, datos) {
     stock,
     stockCritico,
     categoria,
-    imagen: datos.imagen ?? '',
+    imagen: datos.imagen ?? ''
   };
 }
 
+// Consultar todos los productos
 export function consultarProductos() {
   return leerProductos();
 }
 
+// Obtener un producto por su código
 export function obtenerProducto(codigo) {
   const buscado = normalizarCodigo(codigo);
+
   return leerProductos().find((p) => p.codigo === buscado);
 }
 
+// Buscar productos por código, nombre o categoría
 export function buscarProductos(texto) {
   const termino = String(texto ?? '').trim().toLowerCase();
   const lista = leerProductos();
+
   if (!termino) return lista;
 
   return lista.filter(
@@ -87,40 +106,111 @@ export function buscarProductos(texto) {
   );
 }
 
+// Agregar un nuevo producto
 export function agregarProducto(datos) {
   const codigo = normalizarCodigo(datos.codigo);
-  if (!codigo) throw new Error('El código es obligatorio');
+
+  if (!codigo) {
+    throw new Error('El código es obligatorio');
+  }
 
   const lista = leerProductos();
+
   if (lista.some((p) => p.codigo === codigo)) {
     throw new Error(`Ya existe un producto con el código ${codigo}`);
   }
 
   const nuevo = armarProducto(codigo, datos);
+
   guardarProductos([...lista, nuevo]);
+
   return nuevo;
 }
 
+// Editar un producto existente
 export function editarProducto(codigo, cambios) {
   const buscado = normalizarCodigo(codigo);
   const lista = leerProductos();
   const indice = lista.findIndex((p) => p.codigo === buscado);
-  if (indice === -1) throw new Error(`No existe el producto ${buscado}`);
 
-  // el código no se modifica al editar
-  const editado = armarProducto(buscado, { ...lista[indice], ...cambios });
+  if (indice === -1) {
+    throw new Error(`No existe el producto ${buscado}`);
+  }
+
+  // El código no se modifica al editar.
+  const editado = armarProducto(buscado, {
+    ...lista[indice],
+    ...cambios
+  });
+
   const nuevaLista = [...lista];
   nuevaLista[indice] = editado;
+
   guardarProductos(nuevaLista);
+
   return editado;
 }
 
+// Eliminar un producto
 export function eliminarProducto(codigo) {
   const buscado = normalizarCodigo(codigo);
   const lista = leerProductos();
+
   if (!lista.some((p) => p.codigo === buscado)) {
     throw new Error(`No existe el producto ${buscado}`);
   }
 
-  guardarProductos(lista.filter((p) => p.codigo !== buscado));
+  guardarProductos(
+    lista.filter((p) => p.codigo !== buscado)
+  );
+}
+
+// Descontar el stock de los productos de una compra
+export function descontarStockProductos(items) {
+  const lista = leerProductos();
+
+  const actualizado = lista.map((producto) => ({
+    ...producto
+  }));
+
+  const cantidades = new Map();
+
+  // Agrupar las cantidades por código
+  for (const item of items) {
+    const codigo = normalizarCodigo(item.codigo);
+
+    if (!Number.isInteger(item.cantidad) || item.cantidad < 1) {
+      throw new Error('La cantidad debe ser un entero mayor a cero');
+    }
+
+    cantidades.set(
+      codigo,
+      (cantidades.get(codigo) || 0) + item.cantidad
+    );
+  }
+
+  // Validar y descontar las unidades
+  for (const [codigo, cantidad] of cantidades) {
+    const producto = actualizado.find(
+      (p) => p.codigo === codigo
+    );
+
+    if (!producto) {
+      throw new Error(`El producto ${codigo} no existe`);
+    }
+
+    if (cantidad > producto.stock) {
+      throw new Error(`Stock insuficiente para ${producto.nombre}`);
+    }
+
+    producto.stock -= cantidad;
+  }
+
+  // Guardar todos los cambios en una sola escritura
+  localStorage.setItem(
+    CLAVE_STORAGE,
+    JSON.stringify(actualizado)
+  );
+
+  return actualizado;
 }

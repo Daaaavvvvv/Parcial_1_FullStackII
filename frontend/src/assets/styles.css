@@ -1525,3 +1525,44 @@ blockquote {
   font-weight: 700;
   margin-top: 0.3rem;
 }
+
+/* Estilos del carrito */
+.carrito-page > h1 {
+  color: #ffffff;
+}
+
+.carrito-page > .text-center h2,
+.carrito-page > .text-center p {
+  color: #ffffff;
+}
+
+.carrito-page > .text-end h3 {
+  color: #ffffff;
+}
+
+/* Mantener contraste dentro de la tabla */
+.carrito-page .table {
+  background-color: #ffffff;
+  color: #2b2118;
+}
+
+/* Estilos del checkout */
+.checkout-page > h1 {
+  color: #ffffff;
+}
+
+.checkout-page .form-label {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Textos dentro de la tarjeta del resumen */
+.checkout-page .card {
+  background-color: #ffffff;
+  color: #2b2118;
+}
+
+.checkout-page .card h2,
+.checkout-page .card h3 {
+  color: #2b2118;
+}
