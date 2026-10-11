@@ -12,6 +12,7 @@ import AdminUsuarios from './pages/AdminUsuarios.jsx';
 import NuevoUsuario from './pages/NuevoUsuario.jsx';
 import EditarUsuario from './pages/EditarUsuario.jsx';
 import AdminLayout from './components/AdminLayout.jsx';
+import Productos from './pages/Productos.jsx';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
       {/* 1. Rutas de la Tienda (usan el Layout con Navbar, Fondo y Footer) */}
       <Route element={<Layout />}>
         <Route path="/" element={<PaginaPendiente titulo="Inicio" />} />
-        <Route path="/productos" element={<PaginaPendiente titulo="Productos" />} />
+        <Route path="/productos" element={<Productos />} />
         <Route path="/productos/:codigo" element={<PaginaPendiente titulo="Detalle de producto" />} />
         <Route path="/categorias" element={<PaginaPendiente titulo="Categorías" />} />
         <Route path="/categorias/:id" element={<PaginaPendiente titulo="Productos de la categoría" />} />
