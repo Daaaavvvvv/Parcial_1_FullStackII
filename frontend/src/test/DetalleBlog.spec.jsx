@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter, Routes, Route } from 'react-router-dom';
-import { DetalleBlog } from './DetalleBlog';
+import { DetalleBlog } from '../pages/DetalleBlog';
 
 describe('Componente DetalleBlog (Pruebas)', function() {
 

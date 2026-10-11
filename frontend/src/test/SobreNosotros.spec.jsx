@@ -1,6 +1,6 @@
-import React from 'react';
+
 import { render, screen } from '@testing-library/react';
-import SobreNosotros from './SobreNosotros';
+import SobreNosotros from '../pages/SobreNosotros';
 
 describe('SobreNosotros Component', () => {
   it('debe renderizar el título principal correctamente', () => {

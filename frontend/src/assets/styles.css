@@ -1389,7 +1389,14 @@ blockquote {
 
   .newsletter-form button {
     width: 35%;
+
     box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .products-grid {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
-import Blogs from './Blogs';
+import Blogs from '../pages/Blogs';
 
 describe('Componente Blogs (Pruebas)', function() {
 
@@ -12,7 +12,6 @@ describe('Componente Blogs (Pruebas)', function() {
       </MemoryRouter>
     );
 
-    // Verifica que el encabezado principal exista
     const tituloPrincipal = screen.getByText(/Noticias Importantes/i);
     expect(tituloPrincipal).toBeDefined();
   });
@@ -24,7 +23,6 @@ describe('Componente Blogs (Pruebas)', function() {
       </MemoryRouter>
     );
 
-    // Verifica que aparezca el título de uno de los artículos de tu lista
     const tituloBlog = screen.getByText(/Los instrumentos detrás de las leyendas/i);
     expect(tituloBlog).toBeDefined();
   });
@@ -36,7 +34,6 @@ describe('Componente Blogs (Pruebas)', function() {
       </MemoryRouter>
     );
 
-    // Verifica que los botones "LEER ARTÍCULO" estén presentes en pantalla
     const botonesLeer = screen.getAllByText(/LEER ARTÍCULO/i);
     expect(botonesLeer.length).toBeGreaterThan(0);
   });

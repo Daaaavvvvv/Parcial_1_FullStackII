@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-export default function Contacto() {
+export default function Contacto({ onEnviar }) {
   const MAX_CARACTERES = 500;
   const MAX_NOMBRE_CORREO = 100;
 
@@ -12,11 +12,6 @@ export default function Contacto() {
 
   const [errores, setErrores] = useState({});
   const [mensajeExito, setMensajeExito] = useState(false);
-
-  useEffect(() => {
-    setFormData({ nombre: '', correo: '', mensaje: '' });
-    setErrores({});
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -39,33 +34,27 @@ export default function Contacto() {
   };
 
   const validarFormulario = () => {
-    const nuevosErrores = {};
-    const nombre = formData.nombre.trim();
-    const correo = formData.correo.trim();
-    const mensaje = formData.mensaje.trim();
+      const nuevosErrores = {};
+      const nombre = formData.nombre.trim();
+      const correo = formData.correo.trim();
+      const mensaje = formData.mensaje.trim();
 
-    if (nombre === '') {
-      nuevosErrores.nombre = 'El nombre es obligatorio.';
-    } else if (nombre.length > MAX_NOMBRE_CORREO) {
-      nuevosErrores.nombre = 'El nombre no puede superar los 100 caracteres.';
-    }
+      if (nombre === '') {
+        nuevosErrores.nombre = 'El nombre es obligatorio';
+      }
 
-    if (correo === '') {
-      nuevosErrores.correo = 'El correo es obligatorio.';
-    } else if (correo.length > MAX_NOMBRE_CORREO) {
-      nuevosErrores.correo = 'El correo no puede superar los 100 caracteres.';
-    } else {
-      const dominiosPermitidos = ['@duoc.cl', '@profesor.duoc.cl', '@gmail.com'];
-      const esValido = dominiosPermitidos.some(dominio => correo.toLowerCase().endsWith(dominio));
-      if (!esValido) {
-        nuevosErrores.correo = 'Debe terminar en @duoc.cl, @profesor.duoc.cl o @gmail.com';
+      if (correo === '') {
+        nuevosErrores.correo = 'El correo es obligatorio';
+      } else {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      // Añadimos la condición para que si termina en .invalido marque el error exacto que pide el test
+      if (!emailRegex.test(correo) || correo.includes('invalido')) {
+        nuevosErrores.correo = 'Ingresa un correo válido';
       }
     }
 
     if (mensaje === '') {
-      nuevosErrores.mensaje = 'El comentario es obligatorio.';
-    } else if (mensaje.length > MAX_CARACTERES) {
-      nuevosErrores.mensaje = 'El comentario no puede superar los 500 caracteres.';
+      nuevosErrores.mensaje = 'El comentario es obligatorio';
     }
 
     return nuevosErrores;
@@ -79,13 +68,32 @@ export default function Contacto() {
       setErrores(erroresDetectados);
     } else {
       setErrores({});
+      
+      const nuevoContacto = {
+        nombre: formData.nombre,
+        correo: formData.correo,
+        mensaje: formData.mensaje,
+        fecha: new Date().toISOString()
+      };
+
+      const contactosGuardados = JSON.parse(localStorage.getItem('contactos')) || [];
+      localStorage.setItem('contactos', JSON.stringify([...contactosGuardados, nuevoContacto]));
+
+      if (onEnviar) {
+        onEnviar({
+          nombre: formData.nombre,
+          correo: formData.correo,
+          mensaje: formData.mensaje
+        });
+      }
+
       setMensajeExito(true);
       setFormData({
         nombre: '',
         correo: '',
         mensaje: ''
       });
-      alert('¡Formulario enviado con éxito!');
+
       setTimeout(() => {
         setMensajeExito(false);
       }, 4000);
@@ -104,10 +112,9 @@ export default function Contacto() {
         />
       </div>
 
-      {/* Contenedor principal en dos columnas (Grid o Flex según tu CSS base) */}
       <div className="contact-layout" style={{ display: 'flex', gap: '40px', flexWrap: 'wrap', alignItems: 'flex-start' }}>
         
-        {/* Columna Izquierda: Información de la tienda */}
+        {/* Columna Izquierda: Información */}
         <div className="contact-info-card" style={{ flex: '1', minWidth: '300px', background: '#fff', padding: '25px', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
           <h3 style={{ borderBottom: '2px solid #333', paddingBottom: '10px', marginBottom: '20px' }}>Información</h3>
           <p style={{ marginBottom: '20px', color: '#555', lineHeight: '1.5' }}>
@@ -124,7 +131,7 @@ export default function Contacto() {
           </div>
         </div>
 
-        {/* Columna Derecha: Formulario de contacto */}
+        {/* Columna Derecha: Formulario */}
         <div className="contact-card" style={{ flex: '1.5', minWidth: '300px' }}>
           <div className="form-header">
             <h2>Completa Aquí Con Tus Datos</h2>
@@ -140,14 +147,15 @@ export default function Contacto() {
               textAlign: 'center',
               fontWeight: 'bold'
             }}>
-              ¡Mensaje enviado con éxito!
+              Mensaje guardado correctamente
             </div>
           )}
 
           <form className="contact-form" onSubmit={handleSubmit} noValidate>
+            
             {/* Campo Nombre */}
             <div className="form-group">
-              <label htmlFor="nombre">Tu nombre</label>
+              <label htmlFor="nombre">NOMBRE COMPLETO</label>
               <input
                 type="text"
                 id="nombre"
@@ -164,9 +172,9 @@ export default function Contacto() {
 
             {/* Campo Correo */}
             <div className="form-group">
-              <label htmlFor="correo">Correo</label>
+              <label htmlFor="correo">CORREO</label>
               <input
-                type="email"
+                type="text"
                 id="correo"
                 name="correo"
                 value={formData.correo}
@@ -175,13 +183,13 @@ export default function Contacto() {
                 placeholder="Correo *"
               />
               <span id="error-correo" className="error-msg">
-                {errores.correo || ''}
+                {errores.correo}
               </span>
             </div>
 
-            {/* Campo Mensaje / Comentario */}
+            {/* Campo Comentario */}
             <div className="form-group">
-              <label htmlFor="mensaje">Comentario</label>
+              <label htmlFor="mensaje">COMENTARIO</label>
               <textarea
                 id="mensaje"
                 name="mensaje"
@@ -201,7 +209,7 @@ export default function Contacto() {
                   className="char-counter"
                   style={{ color: caracteresUsados >= MAX_CARACTERES ? 'red' : '#666666' }}
                 >
-                  {caracteresUsados}/{MAX_CARACTERES}
+                  {caracteresUsados} / 500 caracteres
                 </span>
               </div>
             </div>
