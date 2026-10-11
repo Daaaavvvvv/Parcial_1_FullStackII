@@ -5,7 +5,6 @@ import Navbar from '../components/Navbar';
 
 describe('Navbar', () => {
 
-  // PRUEBA 1: Comprobar los enlaces
   it('debe mostrar los enlaces con sus rutas correctas', () => {
     render(
       <MemoryRouter>
@@ -29,7 +28,6 @@ describe('Navbar', () => {
       .toBe('/contacto');
   });
 
-  // PRUEBA 2: Comprobar apertura y cierre del menú
   it('debe abrir y cerrar el menú al hacer clic', () => {
     const { container } = render(
       <MemoryRouter>
@@ -37,17 +35,17 @@ describe('Navbar', () => {
       </MemoryRouter>
     );
 
-    const botonMenu = screen.getByRole('button', { name: '☰' });
+    const botonMenu = screen.getByRole('button', {
+      name: 'Abrir o cerrar menú'
+    });
+
     const menu = container.querySelector('nav');
 
-    // Comprobar que comienza cerrado
     expect(menu.classList.contains('activo')).toBe(false);
 
-    // Abrir el menú
     fireEvent.click(botonMenu);
     expect(menu.classList.contains('activo')).toBe(true);
 
-    // Cerrar el menú
     fireEvent.click(botonMenu);
     expect(menu.classList.contains('activo')).toBe(false);
   });
