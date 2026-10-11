@@ -22,6 +22,8 @@ import EditarUsuario from './pages/EditarUsuario.jsx';
 import AdminProductos from './pages/AdminProductos.jsx';
 import NuevoProducto from './pages/NuevoProducto.jsx';
 import EditarProducto from './pages/EditarProducto.jsx';
+import AdminStockBajo from './pages/AdminStockBajo.jsx';
+import AdminCategorias from './pages/AdminCategorias.jsx';
 import './assets/styles.css';
 
 function App() {
@@ -59,11 +61,17 @@ function App() {
         <Route path="admin" element={<PaginaPendiente titulo="Panel de administración" />} />
         <Route path="admin/productos" element={<AdminProductos />} />
         <Route path="admin/productos/nuevo" element={<NuevoProducto />} />
-        <Route path="admin/productos/stock-bajo" element={<PaginaPendiente titulo="Productos con pocas unidades" />} />
+        <Route
+  path="admin/productos/stock-bajo"
+  element={<AdminStockBajo />}
+/>
         <Route path="admin/productos/:codigo" element={<AdminProductos />} />
         <Route path="admin/productos/:codigo/editar" element={<EditarProducto />} />
 
-        <Route path="admin/categorias" element={<PaginaPendiente titulo="Administrar categorías" />} />
+        <Route
+  path="admin/categorias"
+  element={<AdminCategorias />}
+/>
         <Route path="admin/categorias/nueva" element={<PaginaPendiente titulo="Nueva categoría" />} />
         <Route path="admin/categorias/:id/editar" element={<PaginaPendiente titulo="Editar categoría" />} />
         <Route path="admin/usuarios" element={<AdminUsuarios />} />
