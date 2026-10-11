@@ -1,3 +1,4 @@
+
 import { obtenerProducto } from './productoService.js';
 
 const CLAVE_STORAGE = 'carrito';
@@ -7,17 +8,13 @@ function leerCarrito() {
     const guardado = JSON.parse(localStorage.getItem(CLAVE_STORAGE));
     if (Array.isArray(guardado)) return guardado;
   } catch {
-    /* sin storage o JSON dañado: se parte con el carrito vacío */
+    return [];
   }
   return [];
 }
 
 function guardarCarrito(lista) {
-  try {
-    localStorage.setItem(CLAVE_STORAGE, JSON.stringify(lista));
-  } catch {
-    /* sin storage disponible: el carrito queda solo en esta sesión */
-  }
+  localStorage.setItem(CLAVE_STORAGE, JSON.stringify(lista));
   window.dispatchEvent(new Event('carritoActualizado'));
 }
 
@@ -26,13 +23,22 @@ export function obtenerCarrito() {
 }
 
 export function contarCarrito() {
-  return leerCarrito().reduce((total, item) => total + item.cantidad, 0);
+  return leerCarrito().reduce(
+    (total, item) => total + item.cantidad,
+    0
+  );
 }
 
 export function agregarAlCarrito(codigo) {
   const producto = obtenerProducto(codigo);
-  if (!producto) throw new Error('El producto no existe');
-  if (producto.stock <= 0) throw new Error('El producto no tiene stock');
+
+  if (!producto) {
+    throw new Error('El producto no existe');
+  }
+
+  if (producto.stock <= 0) {
+    throw new Error('El producto no tiene stock');
+  }
 
   const carrito = leerCarrito();
   const item = carrito.find((i) => i.codigo === producto.codigo);
@@ -41,6 +47,7 @@ export function agregarAlCarrito(codigo) {
     if (item.cantidad >= producto.stock) {
       throw new Error('No quedan más unidades disponibles de este producto');
     }
+
     item.cantidad += 1;
   } else {
     carrito.push({
@@ -48,15 +55,15 @@ export function agregarAlCarrito(codigo) {
       nombre: producto.nombre,
       precio: producto.precio,
       imagen: producto.imagen,
-      cantidad: 1,
+      cantidad: 1
     });
   }
 
   guardarCarrito(carrito);
   return carrito;
 }
-  
-  export function agregarCantidadAlCarrito(codigo, cantidad) {
+
+export function agregarCantidadAlCarrito(codigo, cantidad) {
   const producto = obtenerProducto(codigo);
 
   if (!producto) {
@@ -68,7 +75,6 @@ export function agregarAlCarrito(codigo) {
   }
 
   const carrito = leerCarrito();
-
   const existente = carrito.find(
     (item) => item.codigo === producto.codigo
   );
@@ -80,7 +86,6 @@ export function agregarAlCarrito(codigo) {
   }
 
   const actualizado = carrito.map((item) => ({ ...item }));
-
   const itemActual = actualizado.find(
     (item) => item.codigo === producto.codigo
   );
@@ -98,6 +103,57 @@ export function agregarAlCarrito(codigo) {
   }
 
   guardarCarrito(actualizado);
-
   return actualizado;
+}
+
+export function cambiarCantidad(codigo, cantidad) {
+  if (!Number.isInteger(cantidad) || cantidad < 1) {
+    throw new Error('La cantidad debe ser un entero mayor a cero');
+  }
+
+  const producto = obtenerProducto(codigo);
+
+  if (!producto) {
+    throw new Error('El producto no existe');
+  }
+
+  const carrito = leerCarrito();
+  const item = carrito.find((i) => i.codigo === codigo);
+
+  if (!item) {
+    throw new Error('El producto no está en el carrito');
+  }
+
+  if (cantidad > producto.stock) {
+    throw new Error('No hay suficientes unidades disponibles');
+  }
+
+  const actualizado = carrito.map((i) =>
+    i.codigo === codigo ? { ...i, cantidad } : i
+  );
+
+  guardarCarrito(actualizado);
+  return actualizado;
+}
+
+export function eliminarDelCarrito(codigo) {
+  const carrito = leerCarrito();
+  const actualizado = carrito.filter(
+    (item) => item.codigo !== codigo
+  );
+
+  guardarCarrito(actualizado);
+  return actualizado;
+}
+
+export function vaciarCarrito() {
+  guardarCarrito([]);
+  return [];
+}
+
+export function calcularTotal() {
+  return leerCarrito().reduce(
+    (total, item) => total + item.precio * item.cantidad,
+    0
+  );
 }

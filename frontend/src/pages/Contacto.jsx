@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 export default function Contacto({ onEnviar }) {
   const MAX_CARACTERES = 500;
@@ -14,24 +14,31 @@ export default function Contacto({ onEnviar }) {
   const [mensajeExito, setMensajeExito] = useState(false);
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
+  const { name, value } = e.target;
 
-    if (name === 'mensaje' && value.length > MAX_CARACTERES) {
-      return;
-    }
+  if (name === 'mensaje' && value.length > MAX_CARACTERES) {
+    return;
+  }
 
-    setFormData({
-      ...formData,
-      [name]: value
+  if (
+    (name === 'nombre' || name === 'correo') &&
+    value.length > MAX_NOMBRE_CORREO
+  ) {
+    return;
+  }
+
+  setFormData({
+    ...formData,
+    [name]: value
+  });
+
+  if (errores[name]) {
+    setErrores({
+      ...errores,
+      [name]: ''
     });
-
-    if (errores[name]) {
-      setErrores({
-        ...errores,
-        [name]: ''
-      });
-    }
-  };
+  }
+};
 
   const validarFormulario = () => {
       const nuevosErrores = {};
