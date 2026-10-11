@@ -2,18 +2,36 @@ import {
   obtenerCarrito,
   contarCarrito,
   agregarAlCarrito,
+  cambiarCantidad,
+  eliminarDelCarrito,
+  calcularTotal
 } from '../services/carritoService.js';
 import { editarProducto } from '../services/productoService.js';
 
 describe('carritoService', () => {
+  let respaldoProductos;
+  let respaldoCarrito;
+
   beforeEach(() => {
+    respaldoProductos = localStorage.getItem('productos');
+    respaldoCarrito = localStorage.getItem('carrito');
+
     localStorage.removeItem('productos');
     localStorage.removeItem('carrito');
   });
 
   afterEach(() => {
-    localStorage.removeItem('productos');
-    localStorage.removeItem('carrito');
+    if (respaldoProductos === null) {
+      localStorage.removeItem('productos');
+    } else {
+      localStorage.setItem('productos', respaldoProductos);
+    }
+
+    if (respaldoCarrito === null) {
+      localStorage.removeItem('carrito');
+    } else {
+      localStorage.setItem('carrito', respaldoCarrito);
+    }
   });
 
   it('debe partir con el carrito vacío', () => {
@@ -80,4 +98,56 @@ describe('carritoService', () => {
     window.removeEventListener('carritoActualizado', avisoSpy);
     expect(avisoSpy).toHaveBeenCalledTimes(1);
   });
+
+  
+it('debe permitir modificar la cantidad de un producto', () => {
+  agregarAlCarrito('GT001');
+
+  cambiarCantidad('GT001', 3);
+
+  expect(obtenerCarrito()[0].cantidad).toBe(3);
+  expect(contarCarrito()).toBe(3);
+});
+
+it('debe rechazar cantidades mayores al stock disponible', () => {
+  editarProducto('GT001', { stock: 2 });
+  agregarAlCarrito('GT001');
+
+  expect(() => cambiarCantidad('GT001', 3))
+    .toThrowError('No hay suficientes unidades disponibles');
+
+  expect(obtenerCarrito()[0].cantidad).toBe(1);
+});
+
+it('debe rechazar cantidades iguales o menores a cero', () => {
+  agregarAlCarrito('GT001');
+
+  expect(() => cambiarCantidad('GT001', 0))
+    .toThrowError('La cantidad debe ser un entero mayor a cero');
+
+  expect(() => cambiarCantidad('GT001', -1))
+    .toThrowError('La cantidad debe ser un entero mayor a cero');
+
+  expect(obtenerCarrito()[0].cantidad).toBe(1);
+});
+
+it('debe calcular correctamente el total del carrito', () => {
+  agregarAlCarrito('GT001');
+  cambiarCantidad('GT001', 2);
+
+  expect(calcularTotal()).toBe(179980);
+});
+
+it('debe eliminar un producto y actualizar el total', () => {
+  agregarAlCarrito('GT001');
+  agregarAlCarrito('GT001');
+
+  expect(calcularTotal()).toBe(179980);
+
+  eliminarDelCarrito('GT001');
+
+  expect(obtenerCarrito()).toEqual([]);
+  expect(contarCarrito()).toBe(0);
+  expect(calcularTotal()).toBe(0);
+});
 });

@@ -1,106 +1,112 @@
 <?xml version="1.0"?>
-<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-11T21:27:42" id="0" hostname="DESKTOP-4RML5LA" tests="98" errors="0" failures="0" time="0.864">
+<testsuite name="Chrome Headless 154.0.0.0 (Windows 10)" package="" timestamp="2026-10-11T21:55:59" id="0" hostname="DESKTOP-4RML5LA" tests="104" errors="0" failures="0" time="0.812">
   <properties>
     <property name="browser.fullName" value="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36"/>
   </properties>
-  <testcase name="Formulario de contacto debe aceptar correos institucionales" time="0.198" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe actualizar el contador de caracteres" time="0.01" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe llamar al spy con datos válidos" time="0.026" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe guardar los datos válidos en localStorage" time="0.021" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe limpiar los campos después de guardar" time="0.018" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe conservar los mensajes anteriores" time="0.026" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto no debe guardar ni limpiar el formulario inválido" time="0.016" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe mostrar los campos del formulario" time="0.005" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto debe mostrar errores cuando los campos están vacíos" time="0.015" classname="Formulario de contacto"/>
-  <testcase name="Formulario de contacto no debe enviar ni guardar un correo inválido" time="0.017" classname="Formulario de contacto"/>
-  <testcase name="ProductoCard debe entregar el código correcto al agregar al carrito" time="0.038" classname="ProductoCard"/>
-  <testcase name="ProductoCard debe mostrar imagen, nombre, precio y stock del producto" time="0.006" classname="ProductoCard"/>
-  <testcase name="ProductoCard debe desactivar el botón cuando no quedan unidades" time="0.004" classname="ProductoCard"/>
-  <testcase name="ProductoCard debe enlazar al detalle del producto" time="0.005" classname="ProductoCard"/>
-  <testcase name="Componente DetalleBlog (Pruebas) renderiza correctamente el contenido del blog cuando el ID existe" time="0.009" classname="Componente DetalleBlog (Pruebas)"/>
-  <testcase name="Componente DetalleBlog (Pruebas) muestra un mensaje de error si el artículo del blog no existe" time="0.006" classname="Componente DetalleBlog (Pruebas)"/>
-  <testcase name="Registro e inicio de sesión permite cerrar sesión" time="0.002" classname="Registro e inicio de sesión"/>
-  <testcase name="Registro e inicio de sesión registra un usuario válido" time="0.047" classname="Registro e inicio de sesión"/>
-  <testcase name="Registro e inicio de sesión rechaza una contraseña incorrecta" time="0.001" classname="Registro e inicio de sesión"/>
-  <testcase name="Registro e inicio de sesión rechaza usuarios desactivados" time="0" classname="Registro e inicio de sesión"/>
-  <testcase name="Registro e inicio de sesión inicia sesión con credenciales correctas" time="0.001" classname="Registro e inicio de sesión"/>
-  <testcase name="Registro e inicio de sesión rechaza un correo repetido" time="0.029" classname="Registro e inicio de sesión"/>
-  <testcase name="Página Productos debe mostrar el título y una tarjeta por cada producto" time="0.011" classname="Página Productos"/>
-  <testcase name="Página Productos debe mostrar un error si ya no quedan unidades para agregar" time="0.028" classname="Página Productos"/>
-  <testcase name="Página Productos debe agregar al carrito el producto correcto y avisar" time="0.013" classname="Página Productos"/>
-  <testcase name="Página Productos debe avisar cuando no hay productos" time="0.004" classname="Página Productos"/>
-  <testcase name="Página Productos debe desactivar el botón de un producto sin stock" time="0.011" classname="Página Productos"/>
-  <testcase name="Componente Home (Pruebas) muestra las tarjetas de productos destacados con sus enlaces" time="0.008" classname="Componente Home (Pruebas)"/>
-  <testcase name="Componente Home (Pruebas) renderiza el banner principal y el botón de productos" time="0.009" classname="Componente Home (Pruebas)"/>
-  <testcase name="Registro debe mostrar error si las contraseñas no coinciden" time="0.031" classname="Registro"/>
-  <testcase name="Registro debe mostrar los campos del formulario" time="0.008" classname="Registro"/>
-  <testcase name="Registro debe mostrar error si la contraseña tiene menos de 8 caracteres" time="0.025" classname="Registro"/>
-  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.004" classname="SobreNosotros Component"/>
-  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.007" classname="SobreNosotros Component"/>
-  <testcase name="Navbar debe abrir y cerrar el menú al hacer clic" time="0.011" classname="Navbar"/>
-  <testcase name="Navbar debe mostrar los enlaces con sus rutas correctas" time="0.016" classname="Navbar"/>
-  <testcase name="carritoService debe sumar la cantidad si el producto ya está en el carrito" time="0.001" classname="carritoService"/>
-  <testcase name="carritoService debe rechazar un producto sin stock" time="0.003" classname="carritoService"/>
-  <testcase name="carritoService debe agregar un producto nuevo con cantidad 1" time="0.001" classname="carritoService"/>
-  <testcase name="carritoService debe partir con el carrito vacío" time="0.001" classname="carritoService"/>
-  <testcase name="carritoService debe partir vacío si lo guardado está dañado" time="0.001" classname="carritoService"/>
-  <testcase name="carritoService debe rechazar un producto que no existe" time="0" classname="carritoService"/>
-  <testcase name="carritoService no debe permitir agregar más unidades que el stock" time="0.001" classname="carritoService"/>
-  <testcase name="carritoService debe avisar con un evento cuando el carrito cambia" time="0.001" classname="carritoService"/>
-  <testcase name="productoService debe rechazar códigos repetidos" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe eliminar un producto" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe rechazar eliminar un producto inexistente" time="0" classname="productoService"/>
-  <testcase name="productoService debe rechazar un código vacío" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe agregar un producto y conservarlo al volver a consultar" time="0.001" classname="productoService"/>
-  <testcase name="productoService no debe modificar los productos iniciales al agregar" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe obtener un producto por código sin importar mayúsculas" time="0" classname="productoService"/>
-  <testcase name="productoService debe buscar por código, nombre o categoría" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe editar un producto sin cambiar su código" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe rechazar stock negativo, decimal o vacío" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe aceptar stock 0 y validar el stock crítico" time="0" classname="productoService"/>
-  <testcase name="productoService debe rechazar ediciones inválidas y productos inexistentes" time="0.002" classname="productoService"/>
-  <testcase name="productoService debe rechazar nombre o categoría vacíos" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe devolver los productos iniciales si no hay cambios guardados" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe rechazar precios inválidos" time="0.001" classname="productoService"/>
-  <testcase name="productoService debe usar los productos iniciales si lo guardado está dañado" time="0.001" classname="productoService"/>
-  <testcase name="Administración de usuarios tiene un enlace para agregar usuarios" time="0.004" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios permite activar un usuario desactivado" time="0.013" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios permite acceder a la edición del usuario correcto" time="0.004" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios muestra el perfil del usuario seleccionado" time="0.011" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios permite cerrar el detalle del usuario" time="0.008" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios muestra los usuarios registrados" time="0.006" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios muestra el estado provisional del historial de compras" time="0.01" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios muestra el perfil correspondiente al usuario correcto" time="0.013" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios muestra un mensaje cuando no hay usuarios" time="0.003" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios elimina al usuario cuando se confirma" time="0.01" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios permite desactivar un usuario" time="0.007" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios solicita confirmación antes de eliminar" time="0.006" classname="Administración de usuarios"/>
-  <testcase name="Administración de usuarios conserva al usuario cuando se cancela la eliminación" time="0.008" classname="Administración de usuarios"/>
-  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.011" classname="Página no encontrada"/>
-  <testcase name="Página no encontrada muestra el título" time="0.004" classname="Página no encontrada"/>
-  <testcase name="Componente Blogs (Pruebas) renderiza el título principal de noticias" time="0.005" classname="Componente Blogs (Pruebas)"/>
-  <testcase name="Componente Blogs (Pruebas) muestra los artículos del blog correctamente" time="0.004" classname="Componente Blogs (Pruebas)"/>
-  <testcase name="Componente Blogs (Pruebas) contiene los botones de enlace para leer los artículos" time="0.006" classname="Componente Blogs (Pruebas)"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra agrega productos al carrito sin descontar stock" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra permite modificar y eliminar productos" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra registra una compra y descuenta el stock" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra registra una compra y descuenta el stock" time="0.008" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra permite modificar y eliminar productos" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
   <testcase name="Issue 27 - Carrito y proceso de compra utiliza el precio vigente del producto" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra permite una compra con despacho y dirección" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra rechaza despacho sin dirección" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra rechaza una compra con stock insuficiente" time="0.002" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra agrega productos al carrito sin descontar stock" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
   <testcase name="Issue 27 - Carrito y proceso de compra rechaza una compra sin productos" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra rechaza una compra con stock insuficiente" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Issue 27 - Carrito y proceso de compra rechaza despacho sin dirección" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
-  <testcase name="Servicio de usuarios debe eliminar un usuario" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar roles inválidos" time="0" classname="Servicio de usuarios"/>
+  <testcase name="Issue 27 - Carrito y proceso de compra permite una compra con despacho y dirección" time="0.001" classname="Issue 27 - Carrito y proceso de compra"/>
+  <testcase name="Página no encontrada ofrece un enlace para volver al inicio" time="0.045" classname="Página no encontrada"/>
+  <testcase name="Página no encontrada muestra el título" time="0.005" classname="Página no encontrada"/>
+  <testcase name="SobreNosotros Component debe mostrar la lista de desarrolladores" time="0.006" classname="SobreNosotros Component"/>
+  <testcase name="SobreNosotros Component debe renderizar el título principal correctamente" time="0.004" classname="SobreNosotros Component"/>
+  <testcase name="Servicio de usuarios debe desactivar y activar un usuario" time="0.002" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe rechazar un correo duplicado al editar" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe agregar un usuario correctamente" time="0.003" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar correos inválidos" time="0.003" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe desactivar y activar un usuario" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe encontrar un usuario por RUN" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe editar un usuario" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe eliminar un usuario" time="0.001" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe rechazar RUN repetidos" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe rechazar correos repetidos" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe agregar un usuario correctamente" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar roles inválidos" time="0" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar correos repetidos" time="0" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe rechazar correos inválidos" time="0.001" classname="Servicio de usuarios"/>
+  <testcase name="Servicio de usuarios debe conservar los usuarios en localStorage" time="0.001" classname="Servicio de usuarios"/>
   <testcase name="Servicio de usuarios debe rechazar campos obligatorios vacíos" time="0.001" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe editar un usuario" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe encontrar un usuario por RUN" time="0" classname="Servicio de usuarios"/>
-  <testcase name="Servicio de usuarios debe conservar los usuarios en localStorage" time="0" classname="Servicio de usuarios"/>
+  <testcase name="Componente DetalleBlog (Pruebas) muestra un mensaje de error si el artículo del blog no existe" time="0.012" classname="Componente DetalleBlog (Pruebas)"/>
+  <testcase name="Componente DetalleBlog (Pruebas) renderiza correctamente el contenido del blog cuando el ID existe" time="0.01" classname="Componente DetalleBlog (Pruebas)"/>
+  <testcase name="Registro debe mostrar error si las contraseñas no coinciden" time="0.103" classname="Registro"/>
+  <testcase name="Registro debe mostrar error si la contraseña tiene menos de 8 caracteres" time="0.031" classname="Registro"/>
+  <testcase name="Registro debe mostrar los campos del formulario" time="0.005" classname="Registro"/>
+  <testcase name="Formulario de contacto no debe guardar ni limpiar el formulario inválido" time="0.082" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe actualizar el contador de caracteres" time="0.008" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe aceptar correos institucionales" time="0.023" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe guardar los datos válidos en localStorage" time="0.016" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe limpiar los campos después de guardar" time="0.015" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe mostrar errores cuando los campos están vacíos" time="0.013" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe mostrar los campos del formulario" time="0.008" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto no debe enviar ni guardar un correo inválido" time="0.02" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe llamar al spy con datos válidos" time="0.015" classname="Formulario de contacto"/>
+  <testcase name="Formulario de contacto debe conservar los mensajes anteriores" time="0.03" classname="Formulario de contacto"/>
+  <testcase name="Administración de usuarios permite acceder a la edición del usuario correcto" time="0.007" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios muestra el estado provisional del historial de compras" time="0.007" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios solicita confirmación antes de eliminar" time="0.005" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios permite desactivar un usuario" time="0.007" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios elimina al usuario cuando se confirma" time="0.005" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios permite activar un usuario desactivado" time="0.005" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios muestra un mensaje cuando no hay usuarios" time="0.004" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios permite cerrar el detalle del usuario" time="0.009" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios muestra los usuarios registrados" time="0.004" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios muestra el perfil correspondiente al usuario correcto" time="0.012" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios conserva al usuario cuando se cancela la eliminación" time="0.004" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios tiene un enlace para agregar usuarios" time="0.005" classname="Administración de usuarios"/>
+  <testcase name="Administración de usuarios muestra el perfil del usuario seleccionado" time="0.006" classname="Administración de usuarios"/>
+  <testcase name="Registro e inicio de sesión rechaza iniciar sesión con un correo no registrado" time="0.001" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza usuarios desactivados" time="0.001" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión permite cerrar sesión" time="0" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión registra un usuario válido" time="0.027" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza un correo repetido" time="0.024" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión inicia sesión con credenciales correctas" time="0.001" classname="Registro e inicio de sesión"/>
+  <testcase name="Registro e inicio de sesión rechaza una contraseña incorrecta" time="0.001" classname="Registro e inicio de sesión"/>
+  <testcase name="productoService debe eliminar un producto" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar nombre o categoría vacíos" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe editar un producto sin cambiar su código" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar eliminar un producto inexistente" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe aceptar stock 0 y validar el stock crítico" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar stock negativo, decimal o vacío" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar precios inválidos" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar un código vacío" time="0" classname="productoService"/>
+  <testcase name="productoService debe buscar por código, nombre o categoría" time="0.003" classname="productoService"/>
+  <testcase name="productoService debe obtener un producto por código sin importar mayúsculas" time="0" classname="productoService"/>
+  <testcase name="productoService debe rechazar códigos repetidos" time="0" classname="productoService"/>
+  <testcase name="productoService debe usar los productos iniciales si lo guardado está dañado" time="0.001" classname="productoService"/>
+  <testcase name="productoService no debe modificar los productos iniciales al agregar" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe rechazar ediciones inválidas y productos inexistentes" time="0" classname="productoService"/>
+  <testcase name="productoService debe agregar un producto y conservarlo al volver a consultar" time="0.001" classname="productoService"/>
+  <testcase name="productoService debe devolver los productos iniciales si no hay cambios guardados" time="0.001" classname="productoService"/>
+  <testcase name="Componente Blogs (Pruebas) muestra los artículos del blog correctamente" time="0.005" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="Componente Blogs (Pruebas) renderiza el título principal de noticias" time="0.004" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="Componente Blogs (Pruebas) contiene los botones de enlace para leer los artículos" time="0.005" classname="Componente Blogs (Pruebas)"/>
+  <testcase name="carritoService debe rechazar cantidades iguales o menores a cero" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe calcular correctamente el total del carrito" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe rechazar un producto sin stock" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService no debe permitir agregar más unidades que el stock" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe partir con el carrito vacío" time="0" classname="carritoService"/>
+  <testcase name="carritoService debe avisar con un evento cuando el carrito cambia" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe permitir modificar la cantidad de un producto" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe agregar un producto nuevo con cantidad 1" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe eliminar un producto y actualizar el total" time="0" classname="carritoService"/>
+  <testcase name="carritoService debe sumar la cantidad si el producto ya está en el carrito" time="0" classname="carritoService"/>
+  <testcase name="carritoService debe rechazar un producto que no existe" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe partir vacío si lo guardado está dañado" time="0.001" classname="carritoService"/>
+  <testcase name="carritoService debe rechazar cantidades mayores al stock disponible" time="0.002" classname="carritoService"/>
+  <testcase name="Navbar debe mostrar los enlaces con sus rutas correctas" time="0.008" classname="Navbar"/>
+  <testcase name="Navbar debe abrir y cerrar el menú al hacer clic" time="0.01" classname="Navbar"/>
+  <testcase name="Componente Home (Pruebas) renderiza el banner principal y el botón de productos" time="0.009" classname="Componente Home (Pruebas)"/>
+  <testcase name="Componente Home (Pruebas) muestra las tarjetas de productos destacados con sus enlaces" time="0.011" classname="Componente Home (Pruebas)"/>
+  <testcase name="ProductoCard debe enlazar al detalle del producto" time="0.027" classname="ProductoCard"/>
+  <testcase name="ProductoCard debe mostrar imagen, nombre, precio y stock del producto" time="0.006" classname="ProductoCard"/>
+  <testcase name="ProductoCard debe entregar el código correcto al agregar al carrito" time="0.003" classname="ProductoCard"/>
+  <testcase name="ProductoCard debe desactivar el botón cuando no quedan unidades" time="0.004" classname="ProductoCard"/>
+  <testcase name="Página Productos debe avisar cuando no hay productos" time="0.007" classname="Página Productos"/>
+  <testcase name="Página Productos debe mostrar el título y una tarjeta por cada producto" time="0.011" classname="Página Productos"/>
+  <testcase name="Página Productos debe agregar al carrito el producto correcto y avisar" time="0.026" classname="Página Productos"/>
+  <testcase name="Página Productos debe mostrar un error si ya no quedan unidades para agregar" time="0.022" classname="Página Productos"/>
+  <testcase name="Página Productos debe desactivar el botón de un producto sin stock" time="0.013" classname="Página Productos"/>
   <system-out>
     <![CDATA[
 ]]>

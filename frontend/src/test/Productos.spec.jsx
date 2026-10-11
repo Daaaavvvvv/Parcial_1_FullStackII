@@ -16,14 +16,28 @@ describe('Página Productos', () => {
   const botonesAgregar = () =>
     screen.getAllByRole('button', { name: /Añadir al carrito/i });
 
+let respaldoProductos;
+let respaldoCarrito;
+
   beforeEach(() => {
+    respaldoProductos = localStorage.getItem('productos');
+    respaldoCarrito = localStorage.getItem('carrito');
     localStorage.removeItem('productos');
     localStorage.removeItem('carrito');
   });
 
   afterEach(() => {
-    localStorage.removeItem('productos');
-    localStorage.removeItem('carrito');
+    if (respaldoProductos === null) {
+      localStorage.removeItem('productos');
+    } else {
+      localStorage.setItem('productos', respaldoProductos);
+    }
+
+    if (respaldoCarrito === null) {
+      localStorage.removeItem('carrito');
+    } else {
+      localStorage.setItem('carrito', respaldoCarrito);
+    }
   });
 
   it('debe mostrar el título y una tarjeta por cada producto', () => {
@@ -69,8 +83,13 @@ describe('Página Productos', () => {
 
   it('debe avisar cuando no hay productos', () => {
     localStorage.setItem('productos', '[]');
+
     mostrar();
 
-    expect(screen.getByText('No hay productos disponibles')).toBeTruthy();
+    expect(
+      screen.getByText(
+        /No se encontraron productos que coincidan con tu búsqueda/i
+      )
+    ).toBeTruthy();
   });
 });
