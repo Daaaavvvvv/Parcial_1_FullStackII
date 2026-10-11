@@ -84,6 +84,25 @@ export function consultarProductos() {
   return leerProductos();
 }
 
+/**
+ * Devuelve los productos cuyo stock actual está
+ * en el nivel crítico o por debajo.
+ *
+ * Si el producto no tiene un stock crítico definido,
+ * se utiliza un límite predeterminado de 5 unidades.
+ */
+export function consultarProductosStockBajo() {
+  const STOCK_CRITICO_PREDETERMINADO = 5;
+
+  return consultarProductos().filter((producto) => {
+    const limite =
+      producto.stockCritico ?? STOCK_CRITICO_PREDETERMINADO;
+
+    return Number(producto.stock) <= Number(limite);
+  });
+}
+
+
 // Obtener un producto por su código
 export function obtenerProducto(codigo) {
   const buscado = normalizarCodigo(codigo);
@@ -149,6 +168,23 @@ export function editarProducto(codigo, cambios) {
   guardarProductos(nuevaLista);
 
   return editado;
+}
+
+export function reemplazarCategoriaEnProductos(
+  nombreAnterior,
+  nombreNuevo
+) {
+  const lista = leerProductos();
+
+  const actualizados = lista.map((producto) =>
+    producto.categoria === nombreAnterior
+      ? { ...producto, categoria: nombreNuevo }
+      : producto
+  );
+
+  guardarProductos(actualizados);
+
+  return actualizados;
 }
 
 // Eliminar un producto

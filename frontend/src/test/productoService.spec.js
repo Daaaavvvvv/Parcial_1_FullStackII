@@ -7,6 +7,7 @@ import {
   eliminarProducto,
 } from '../services/productoService.js';
 import { productosIniciales } from '../data/productos.js';
+import { consultarProductosStockBajo } from '../services/productoService.js';
 
 describe('productoService', () => {
   const productoValido = {
@@ -17,6 +18,7 @@ describe('productoService', () => {
     stock: 4,
     categoria: 'Micrófonos',
     imagen: '/img/mc001.jpg',
+
   };
 
   beforeEach(() => {
@@ -126,4 +128,33 @@ describe('productoService', () => {
   it('debe rechazar eliminar un producto inexistente', () => {
     expect(() => eliminarProducto('XX999')).toThrowError(/No existe/);
   });
+  
+it('debe consultar productos con stock bajo', () => {
+  const bajos = consultarProductosStockBajo();
+
+  expect(bajos.map((p) => p.codigo)).toContain('GT002');
+  expect(bajos.map((p) => p.codigo)).toContain('BT001');
+  expect(bajos.map((p) => p.codigo)).not.toContain('GT001');
+});
+
+it('debe respetar el stock crítico de cada producto', () => {
+  editarProducto('GT001', { stockCritico: 12 });
+
+  expect(
+    consultarProductosStockBajo()
+      .map((p) => p.codigo)
+  ).toContain('GT001');
+
+  editarProducto('GT001', { stockCritico: 2 });
+
+  expect(
+    consultarProductosStockBajo()
+      .map((p) => p.codigo)
+  ).not.toContain('GT001');
+});
+
+
+
+
+
 });
