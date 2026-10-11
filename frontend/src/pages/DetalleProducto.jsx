@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import {
   obtenerProducto,
@@ -16,7 +16,22 @@ export default function DetalleProducto() {
 
   const [cantidad, setCantidad] = useState(1);
   const [aviso, setAviso] = useState('');
-  const [stockCarrito, setStockCarrito] = useState(0);
+  const [carrito, setCarrito] = useState(obtenerCarrito);
+
+  useEffect(() => {
+    const actualizarCarrito = () => {
+      setCarrito(obtenerCarrito());
+    };
+
+    window.addEventListener('carritoActualizado', actualizarCarrito);
+
+    return () => {
+      window.removeEventListener(
+        'carritoActualizado',
+        actualizarCarrito
+      );
+    };
+  }, []);
 
   if (!producto) {
     return (
@@ -24,6 +39,7 @@ export default function DetalleProducto() {
         <div className="detalle-info">
           <h1>Producto no encontrado</h1>
           <p>El producto que buscas no existe.</p>
+
           <Link to="/productos" className="btn-agregar">
             Volver al catálogo
           </Link>
@@ -38,13 +54,12 @@ export default function DetalleProducto() {
       item.codigo !== producto.codigo
   );
 
-  const cantidadEnCarrito = obtenerCarrito().find(
-    (item) => item.codigo === producto.codigo
-  )?.cantidad || 0;
+  const cantidadEnCarrito =
+    carrito.find((item) => item.codigo === producto.codigo)?.cantidad || 0;
 
   const disponibles = Math.max(
     0,
-    producto.stock - Math.max(cantidadEnCarrito, stockCarrito)
+    producto.stock - cantidadEnCarrito
   );
 
   const sinStock = disponibles === 0;
@@ -52,12 +67,6 @@ export default function DetalleProducto() {
   const manejarAgregar = () => {
     try {
       agregarCantidadAlCarrito(producto.codigo, cantidad);
-
-      const nuevaCantidad = obtenerCarrito().find(
-        (item) => item.codigo === producto.codigo
-      )?.cantidad || 0;
-
-      setStockCarrito(nuevaCantidad);
       setCantidad(1);
       setAviso('Producto agregado al carrito correctamente');
     } catch (error) {
@@ -67,7 +76,10 @@ export default function DetalleProducto() {
 
   return (
     <main className="contenedor-detalle">
-      <nav className="breadcrumb" aria-label="Ruta de navegación">
+      <nav
+        className="breadcrumb"
+        aria-label="Ruta de navegación"
+      >
         <Link to="/">Home</Link>
         {' > '}
         <Link to="/productos">{producto.categoria}</Link>
@@ -78,7 +90,10 @@ export default function DetalleProducto() {
       <div className="detalle-grid">
         <div className="detalle-imagenes">
           <div className="detalle-imagen-principal">
-            <img src={producto.imagen} alt={producto.nombre} />
+            <img
+              src={producto.imagen}
+              alt={producto.nombre}
+            />
           </div>
 
           <div className="detalle-miniaturas">
@@ -126,7 +141,7 @@ export default function DetalleProducto() {
 
             <select
               id="cantidad"
-              value={Math.min(cantidad, Math.max(disponibles, 1))}
+              value={cantidad}
               disabled={sinStock}
               onChange={(e) => setCantidad(Number(e.target.value))}
             >
@@ -151,7 +166,10 @@ export default function DetalleProducto() {
           </button>
 
           {aviso && (
-            <p role="status" className="detalle-aviso">
+            <p
+              role="status"
+              className="detalle-aviso"
+            >
               {aviso}
             </p>
           )}
@@ -182,7 +200,10 @@ export default function DetalleProducto() {
                   to={`/productos/${item.codigo}`}
                   className="relacionado-item"
                 >
-                  <img src={item.imagen} alt={item.nombre} />
+                  <img
+                    src={item.imagen}
+                    alt={item.nombre}
+                  />
 
                   <p>{item.nombre}</p>
 

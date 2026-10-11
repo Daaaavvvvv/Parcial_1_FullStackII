@@ -51,7 +51,11 @@ export default function Carrito() {
     });
   };
 
-  const total = calcularTotal();
+  const total = productos.reduce(
+  (acumulado, producto) =>
+    acumulado + Number(producto.precio) * producto.cantidad,
+  0
+);
 
   return (
     <main className="container py-5 carrito-page">
