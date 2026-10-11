@@ -1,4 +1,3 @@
-
 import { render, screen, fireEvent } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import Navbar from '../components/Navbar';
@@ -35,9 +34,8 @@ describe('Navbar', () => {
       </MemoryRouter>
     );
 
-    const botonMenu = screen.getByRole('button', {
-      name: 'Abrir o cerrar menú'
-    });
+    // Aquí faltaba asignar el elemento a la constante botonMenu
+    const botonMenu = screen.getByRole('button', { name: /☰/i });
 
     const menu = container.querySelector('nav');
 
