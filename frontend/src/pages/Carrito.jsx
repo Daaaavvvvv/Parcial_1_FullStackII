@@ -4,8 +4,7 @@ import { Link } from 'react-router-dom';
 import {
   obtenerCarrito,
   cambiarCantidad,
-  eliminarDelCarrito,
-  calcularTotal
+  eliminarDelCarrito
 } from '../services/carritoService.js';
 
 export default function Carrito() {
