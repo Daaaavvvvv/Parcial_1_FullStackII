@@ -35,6 +35,7 @@ import AdminCategorias from './pages/AdminCategorias.jsx';
 import AdminPedidos from './pages/AdminPedidos.jsx';
 import AdminDetallePedido from './pages/AdminDetallePedido.jsx';
 import AdminReportes from './pages/AdminReportes.jsx';
+import AdminDashboard from './pages/AdminDashboard.jsx';
 
 import './assets/styles.css';
 
@@ -82,7 +83,7 @@ function App() {
       <Route path="/admin" element={<AdminLayout />}>
         <Route
           index
-          element={<PaginaPendiente titulo="Panel de administración" />}
+          element={<AdminDashboard />} 
         />
 
         {/* Productos */}
